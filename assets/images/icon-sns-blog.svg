@@ -1,0 +1,12 @@
+<svg id="blog" xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26">
+  <g id="그룹_333" data-name="그룹 333" transform="translate(-0.27 0.387)">
+    <g id="타원_45" data-name="타원 45" transform="translate(0.27 -0.387)" fill="none" stroke="#fff" stroke-width="1">
+      <ellipse cx="12.5" cy="13" rx="12.5" ry="13" stroke="none"/>
+      <ellipse cx="12.5" cy="13" rx="12" ry="12.5" fill="none"/>
+    </g>
+  </g>
+  <g id="그룹_334" data-name="그룹 334" transform="translate(4.634 7.395)">
+    <path id="합치기_3" data-name="합치기 3" d="M6.486,9.6H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0h7a4,4,0,0,1,4,4V5.6a4,4,0,0,1-4,4H8.515L7.5,12Z" transform="translate(0.366 -0.394)" fill="#fff"/>
+    <text id="blog-2" data-name="blog" transform="translate(2.364 5.605)" fill="#464646" font-size="5" font-family="NanumSquareEB, NanumSquare"><tspan x="0" y="0">blog</tspan></text>
+  </g>
+</svg>

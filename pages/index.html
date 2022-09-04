@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여행버튼 페이지 리스트</title>
+
+  <style type="text/css">
+    /* reset */
+    body,
+    div,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    code,
+    form,
+    fieldset,
+    legend,
+    textarea,
+    p,
+    blockquote,
+    th,
+    td,
+    input,
+    select,
+    textarea,
+    button {
+      margin: 0;
+      padding: 0
+    }
+
+    fieldset,
+    img {
+      border: 0 none
+    }
+
+    /*dl,ul,ol,menu,li {list-style:none}*/
+    blockquote,
+    q {
+      quotes: none
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: '';
+      content: none
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      vertical-align: middle
+    }
+
+    button {
+      border: 0 none;
+      background-color: transparent;
+      cursor: pointer
+    }
+
+    body {
+      background: #fff
+    }
+
+    body,
+    th,
+    td,
+    input,
+    select,
+    textarea,
+    button {
+      font-size: 12px;
+      line-height: 1.5;
+      font-family: '돋움', dotum, sans-serif;
+      color: #333
+    }
+
+    a {
+      color: #333;
+      text-decoration: none
+    }
+
+    a:active,
+    a:hover {
+      text-decoration: underline
+    }
+
+    address,
+    caption,
+    cite,
+    code,
+    dfn,
+    em,
+    var,
+    i {
+      font-style: normal;
+      font-weight: normal
+    }
+
+    /* layout-style */
+    body {
+      padding: 10px;
+      background-color: #eee;
+    }
+
+    #wrap {
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    .h1_tit {
+      font-size: 16px;
+      font-family: Helvetica;
+    }
+
+    .h2_tit,
+    .guide_tit {
+      font-size: 16px;
+      font-family: '나눔고딕', nanumgothic, '돋움', dotum;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .pj_name h1 {
+      font-size: 24px;
+      font-family: '나눔고딕', nanumgothic, '돋움', dotum;
+      font-weight: bold;
+      color: #000;
+      letter-spacing: -1px;
+    }
+
+    .pj_name .link {
+      float: left;
+      font-size: 12px;
+      font-family: Helvetica;
+      background-color: #E6E6E6;
+      color: #333;
+    }
+
+    .pj_name .owner {
+      float: right
+    }
+
+    .pj_name:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+
+    .guide_tit {
+      margin-top: 20px;
+    }
+
+    .link {
+      display: inline-block;
+      padding: 0 3px;
+      margin: 3px 3px 3px 0;
+      background-color: #999;
+      color: #fff;
+    }
+
+    .memo {
+      padding: 5px 10px;
+      background-color: #E6E6E6;
+      border-radius: 5px;
+      margin-top: 5px;
+      color: #4e4e4e;
+    }
+
+    .sub {
+      margin-left: 20px;
+    }
+
+    .sub li {
+      margin-bottom: 13px;
+    }
+
+    .sub_3depth {
+      margin-left: 30px;
+    }
+
+    .issue {
+      margin-top: 15px;
+    }
+
+    .txt_box {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    .ico_new {
+      background-color: #54c146;
+      border-radius: 3px;
+      padding: 0 1px;
+      letter-spacing: -1px;
+      color: #fff;
+    }
+
+    hr {
+      margin: 15px 0;
+    }
+
+    .copyright {
+      margin-top: 15px;
+      font-size: 11px;
+    }
+
+    i {
+      font-size: 11px;
+      color: #999;
+    }
+
+    del {
+      color: #fe91a1;
+    }
+
+    .ico_wrap {
+      margin-top: 10px;
+    }
+
+    .ico_wrap .ico {
+      color: #fff;
+      padding: 3px;
+      margin-right: 3px;
+    }
+
+    .ing {
+      background-color: #5d9b1a;
+    }
+
+    .done2 {
+      background-color: #921a9b;
+    }
+
+    .done {
+      background-color: #1f78bd;
+    }
+
+    .finish {
+      background-color: #4e4e4e;
+    }
+
+    .edit {
+      background-color: #ff2d2d;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+    <div class="pj_name">
+      <h1>여행버튼 퍼블리싱 리스트</h1>
+      <span class="owner">- 작업자 : 고인규</span>
+    </div>
+    <div class="ico_wrap">
+      <span class="ico ing">진행중</span>
+      <span class="ico done">작업완료</span>
+      <span class="ico done2">반응형 작업완료</span>
+      <span class="ico finish">검수완료</span>
+      <span class="ico edit">수정</span>
+    </div>
+    <hr>
+
+    <div id="pageList"></div>
+  </div>
+
+
+  <script>
+
+    const page_list = [
+      {
+        title: "홈",
+        dir: "main",
+        children: [
+          {
+            name: "홈",
+            status: "done2",
+            memo: "햄버거 메뉴 / [모달] 업로드 / [모달] 게시물 업로드"
+          },
+          {
+            name: "알림",
+            memo: "알림 있을 때 / 없을 때 / 삭제"
+          },
+          {
+            name: "내 정보",
+            memo: "내 계정 / 로그아웃 모달"
+          },
+          {
+            name: "회원탈퇴",
+          },
+          {
+            name: "회원탈퇴 완료",
+          },
+        ]
+      },
+      {
+        title: "여행상품",
+        dir: "product",
+        children: [
+          {
+            name: "여행상품",
+            status: "done2"
+          },
+          {
+            name: "여행게시물",
+            memo: '[모달] 옵션 선택'
+          },
+          {
+            name: "여행게시물 등록",
+            memo: "사진 선택 / 수정 / [모달] 임시 저장"
+          },
+
+          {
+            name: "여행게시물 등록 - 영상",
+          },
+          {
+            name: "결제하기",
+          },
+        ]
+      },
+      {
+        title: "지역별 리플렛",
+        dir: "leaflet",
+        children: [
+          {
+            name: "지역별 리플렛 목록",
+            status: "done2"
+          },
+
+        ]
+      },
+      {
+        title: "매거진",
+        dir: "magazine",
+        children: [
+          {
+            name: "매거진",
+            status: "done2"
+          },
+
+        ]
+      },
+      {
+        title: "피드",
+        dir: "feed",
+        children: [
+          {
+            name: "피드 목록",
+            status: "done2",
+            memo: '[모달] 더보기 / [모달] 댓글/ [모달] 클립보드 복사/ [모달] 삭제 / [모달] 삭제 완료 / [모달] 신고 / [모달] 신고 접수 완료/ [모달] 남의 게시풀 더보기 / [모달] 게시물 상세 PC'
+          },
+          {
+            name: "피드 9:16 확대 화면",
+            status: "done2",
+          },
+
+        ]
+      },
+      {
+        title: "비디오 클립",
+        dir: "clip",
+        children: [
+          {
+            name: "비디오 클립 목록",
+            status: "done2",
+            memo: "지역 선택"
+          },
+          {
+            name: "사용자 클립",
+            status: "done2",
+            memo: "무료 클립"
+          },
+          {
+            name: "클립 상세",
+            status: "done2",
+            memo: "[모달] 장바구니 담기"
+          },
+          {
+            name: "클립 업로드",
+            status: "done2",
+          },
+        ]
+      },
+      {
+        title: "검색",
+        dir: "search",
+        children: [
+          {
+            name: "검색",
+            memo: "검색어 입력 전 / 후"
+          },
+          {
+            name: "검색 결과 - 상품",
+          },
+          {
+            name: "검색 결과 - 매거진",
+          },
+          {
+            name: "검색 결과 - 클립",
+          },
+          {
+            name: "검색 결과 - 해시태그",
+          },
+          {
+            name: "검색 결과 - 위치",
+          },
+          {
+            name: "검색 결과 - 계정",
+          },
+        ]
+      },
+      {
+        title: "주문",
+        dir: "order",
+        children: [
+          {
+            name: "장바구니",
+          },
+          {
+            name: "장바구니 없음",
+          },
+          {
+            name: "장바구니 결제하기",
+          },
+          {
+            name: "결제하기",
+            memo: "[모달] 예약신청 완료"
+          },
+          {
+            name: "결제완료",
+          },
+          {
+            name: "결제실패",
+          },
+          {
+            name: "특별 약관",
+          },
+        ]
+      },
+      {
+        title: "고객센터",
+        dir: "cs",
+        children: [
+          {
+            name: "자주묻는질문",
+            memo: "클릭 했을 때"
+          },
+          {
+            name: "공지사항",
+            memo: "클릭 했을 때"
+          },
+          {
+            name: "문의하기",
+          },
+          {
+            name: "문의하기 등록",
+            memo: "사진 등록 / 삭제"
+          },
+          {
+            name: "문의 내역 확인",
+            memo: "문의 내역 클릭 / 문의 내역 없음 / 답변"
+          },
+        ]
+      },
+      {
+        title: "로그인",
+        dir: "member",
+        children: [
+          {
+            name: "로그인",
+            memo: "로그인 실패"
+          },
+          {
+            name: "회원가입",
+            memo: "인증번호 입력"
+          },
+          {
+            name: "이메일 찾기",
+          },
+          {
+            name: "이메일 찾기 완료",
+          },
+          {
+            name: "비밀번호 찾기",
+          },
+          {
+            name: "비밀번호 전송 완료",
+          },
+        ]
+      },
+      {
+        title: "마이페이지",
+        dir: "mypage",
+        children: [
+          {
+            name: "게시물",
+            memo: "[모달] 프로필 편집 / [모달] 더보기"
+          },
+
+          {
+            name: "지도",
+            memo: "[모달] 지도 상세"
+          },
+          {
+            name: "게시물 목록",
+            memo: "지도 겹처 있는 아이콘 클릭 시"
+          },
+          {
+            name: "게시물 상세",
+            memo: "지도 겹처 있는 아이콘 클릭 시 나온 화면에서 게시물 클릭 시"
+          },
+
+          {
+            name: "리플렛",
+            memo: "[모달] 더보기"
+          },
+          {
+            name: "리플렛 9:16",
+          },
+          {
+            name: "클립"
+          },
+          {
+            name: "개인정보수정",
+            status: "done2"
+          },
+          {
+            name: "비밀번호 변경",
+          },
+          {
+            name: "예약,취소내역",
+            status: "done2"
+          },
+          {
+            name: "환불 계좌",
+          },
+          {
+            name: "알림 설정",
+          },
+          {
+            name: "클립 거래 내역",
+            status: "done2"
+          },
+          {
+            name: "클립 구매 취소",
+
+          },
+          {
+            name: "예약상세내역",
+
+          },
+          {
+            name: "취소상세내역",
+
+          },
+          {
+            name: "예약취소완료",
+
+          },
+        ]
+      },
+      {
+        title: "공모전",
+        dir: "contest",
+        children: [
+          {
+            name: "공모전 목록",
+            status: "done2",
+            memo: "마감된 공모전"
+          },
+          {
+            name: "공모전 상세",
+            status: "done2",
+            memo: "[모달] 공모전 업로드 / [모달] 최종확인"
+          },
+          {
+            name: "출품작",
+            status: "done2",
+          },
+          {
+            name: "출품작 상세",
+            status: "done2",
+          },
+          {
+            name: "공모전 업로드",
+            status: "done2",
+            memo: "[모달] 최종확인 팝업"
+          },
+          {
+            name: "공모전 출품 완료",
+            status: "done2",
+          },
+        ]
+      }
+    ]
+
+    let html = '';
+    let total = {
+      page: 0,
+      done: 0,
+      done2: 0,
+
+    }
+
+
+    page_list.forEach((page) => {
+      total.page += page.children.length;
+      html += `<h2 class="h2_tit">${page.title}</h2>
+    <ol class="sub">`;
+      page.children.forEach((child, index) => {
+        if (child.status === 'done2') {
+          total.done2 += 1
+        }
+        let link = page.dir + "/" + page.dir + (index < 10 ? "0" : "") + index + ".html";
+        if (child.link) {
+          link = child.link
+        }
+        html += `<li>
+        <a href="${link}" target="_blank" class="link ${child.status}">${child.name}</a>
+        <span>${link}</span>`
+        if (child.memo) {
+          html += `<div class="memo">${child.memo}</div>`
+        }
+        html += `</li>`;
+      })
+      html += `</ol><hr>`
+    })
+
+    console.log(total);
+    console.log(Math.round(total.done2 / total.page * 100) + "%");
+
+    document.querySelector('#pageList').innerHTML = html
+
+  </script>
+
+</body>
+
+</html>

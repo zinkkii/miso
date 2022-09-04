@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div data-include-path="../../html/_modal.html"></div>
+  <div id="wrap">
+
+    <div class="gnb-mobile" data-include-path="../../html/layout/_mobile-gnb.html"></div>
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : 모바일 헤더 -->
+    <div class="mobile-main-header">
+      <a href="#" class="hamburger" data-modal-target="modal-hamburger"><span class="menu-hamburger black"></span></a>
+      <div class="right">
+        <a href="#" class="add"><span class="menu-add black"></span></a>
+        <a href="#" class="notification"><span class="menu-notification black"></span></a>
+        <a href="#" class="cart"><span class="menu-cart black"></span></a>
+      </div>
+    </div>
+    <!-- e : 모바일 헤더 -->
+
+    <div id="header">
+      <div class="header-title-bar for-m height-small">
+        <div class="container none-border">
+          <div class="header-left">
+            <a href="" class="button-back"><span class="icon-back"></span></a>
+          </div>
+          <div class="header-center">
+            <h1 class="header-title">공모 요강</h1>
+          </div>
+          <div class="header-right">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container" class="wide transparent">
+
+      <div id="contents">
+
+        <!-- s : 공모전 상세 -->
+        <div class="contest-wrapper">
+
+          <div class="contest-wrapper-tabs for-pc">
+            <ul>
+              <li class="active"><a href="">공모요강</a></li>
+              <li><a href="">출품작</a></li>
+            </ul>
+            <a href="#" data-modal-target="modal-contest-upload" class="btn-apply">출품하기</a>
+          </div>
+
+          <div class="contest-wrapper-body">
+
+
+            <div class="contest-detail">
+              <div class="info">
+                <ul>
+                  <li>
+                    <span class="label">기간</span>
+                    <span class="text">~ 2000.01.01 <span class="dday">D-44</span></span>
+                  </li>
+                  <li>
+                    <span class="label">총 상금</span>
+                    <span class="text">1,000,000원</span>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="body">
+                <img src="../../assets/images/example-contest@2x.png" alt="" width="100%" />
+              </div>
+
+              <div class="for-m">
+                <div class="btn-group multiple">
+                  <a href="#" class="btn-raised primary radius5">출품하기</a>
+                  <a href="#" class="btn-border radius5">출품작 보기</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="contest-wrapper-footer btn-group d-inline-block for-pc">
+            <a href="#" class="btn-border primary ">목록으로</a>
+          </div>
+
+        </div>
+        <!-- e : 공모전 상세 -->
+
+      </div>
+
+    </div>
+
+    <div data-include-path="../../html/layout/_footer.html"></div>
+  </div>
+
+
+
+
+</body>
+
+</html>

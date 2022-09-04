@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script src="../../assets/js/common.js"></script>
+
+
+</head>
+
+<body>
+
+  <div data-include-path="../../html/_modal.html"></div>
+  <div id="wrap">
+
+
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <div id="container">
+      <div id="contents">
+
+        <!-- s : 공모전 업로드 -->
+        <div class="contest-upload">
+          <div class="form">
+
+            <div class="form-group vertical none-border">
+              <div class="form-video-preview">
+                <div class="empty-vod">
+                  <span class="icon-video"></span>
+                  <p class="message">링크를 입력해 출품작을 등록하세요.</p>
+                </div>
+                <video class="vod" playsinline="" type="video/mp4" src="../../assets/images/example_vod.mp4"
+                  loop=""></video>
+              </div>
+
+
+
+            </div>
+
+            <div class="form-group vertical none-border">
+              <div class="form-subject bold">
+                영상 링크 <span class="required"></span>
+              </div>
+              <div class="form-content">
+                <input type="text" class="input-text full" placeholder="영상 링크를 입력해 주세요.">
+              </div>
+            </div>
+
+            <div class="form-group vertical none-border">
+              <div class="form-subject bold">
+                카테고리 <span class="required"></span>
+              </div>
+              <div class="form-content">
+                <select name="" id="" class="form-select full">
+                  <option value="">선택해 주세요.</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group vertical none-border">
+              <div class="form-subject bold">
+                제목 <span class="required"></span>
+              </div>
+              <div class="form-content">
+                <input type="text" class="input-text full" placeholder="제목을 입력해 주세요.">
+              </div>
+            </div>
+
+            <div class="form-group vertical none-border">
+              <div class="form-subject bold">
+                내용
+              </div>
+              <div class="form-content">
+                <textarea class="textarea full" rows="10" placeholder="내용을 입력해 주세요."></textarea>
+              </div>
+
+              <div class="ui-message-box scrollable">
+                <div class="inner" style="max-height:115px;">
+                  <p>출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는
+                    공모전에
+                    출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에
+                    관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여</p>
+                </div>
+              </div>
+
+              <input type="checkbox" class="input-checkbox" id="agree-check">
+              <label for="agree-check">콘텐츠 활용에 동의합니다</label>
+            </div>
+
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn-raised primary btn-large" data-modal-target="modal-contest-confirm">출품하기</a>
+          </div>
+
+        </div>
+        <!-- e : 공모전 업로드 -->
+
+      </div>
+    </div>
+
+    <div data-include-path="../../html/layout/_footer.html"></div>
+  </div>
+
+
+
+
+</body>
+
+</html>

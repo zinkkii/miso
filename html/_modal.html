@@ -1,0 +1,729 @@
+<script>
+  // 모달 닫기
+  const closeModal = (target) => {
+    console.log(target);
+
+    if (target) {
+      $('#' + target).removeClass("show")
+    } else {
+      $("#modal-bg").removeClass("show");
+      $('.modal.show').removeClass("show")
+    }
+  }
+
+  // 모달 오픈
+  const openModal = (target, isBackdropClose = true) => {
+    $("#" + target).toggleClass("show");
+    if (isBackdropClose) {
+      $("#modal-bg").toggleClass("show");
+    }
+
+  };
+</script>
+
+<!-- s : 피드 게시물 상세 PC -->
+<div class="modal modal-feed-detail" id="modal-feed-detail">
+  <button type="button" class="close"><span class="icon-close-wh"></span></button>
+  <div class="modal-content">
+
+    <div class="thumb">
+
+      <span class="img"
+        style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)">
+      </span>
+
+      <div class="pagers-wrapper">
+        <div class="btns">
+          <button type="button" class="btn-like"></button>
+          <button type="button" class="btn-reply"></button>
+        </div>
+        <div class="pagers">
+          <span class="pager"></span>
+          <span class="pager active"></span>
+          <span class="pager"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+
+      <div class="info">
+        <span class="img bg-cover"
+          style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+        <div class="name-bar">
+          <span class="name">니나노트립</span>
+          <span class="address">제주특별자치도 제주시 구좌읍 번영로</span>
+        </div>
+
+        <div class="managed">
+          <button type="button" class="follow">팔로우</button>
+
+          <button type="button" class="like"> <span class="icon-heart black on"></span> </button>
+          <button type="button" class="share"> <span class="icon-share"></span> </button>
+        </div>
+      </div>
+
+      <div class="scrollable">
+
+        <div class="body">
+          <div class="content">오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛
+            억세밭이
+            너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도
+            여행
+            황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛
+            억세밭이
+            너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도
+            여행
+            황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛
+            억세밭이
+            너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도
+            여행
+            황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+            오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요! 오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!
+          </div>
+
+          <div class="tags">#제주도 #억새밭축제 #혼자하는여행 #귤의나라 #좋아요</div>
+        </div>
+
+        <div class="replies-type-wrapper">
+          <div class="list">
+            <div class="item">
+              <div class="item-inner">
+                <div class="profile-bar">
+                  <span class="photo"
+                    style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                  <div>
+                    <span class="name">여행버튼</span>
+                    <span class="text">꺅 너무 근사해요 !!#$!</span>
+                  </div>
+                  <button type="button" class="like"> <span class="icon-heart black"></span> </button>
+                </div>
+                <div class="util">
+                  <div>
+                    <button type="button">댓글 달기</button>
+                    &middot;
+                    <button type="button">좋아요 1개</button>
+                  </div>
+                  <div>
+                    <span class="created-at">12시간 전</span>
+                    &middot;
+                    <button type="button" onclick="onReplyRemove()">삭제</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item re">
+                <div class="item-inner">
+                  <div class="profile-bar">
+                    <span class="photo"
+                      style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                    <div>
+                      <span class="name">여행버튼</span>
+                      <span class="text"><span class="at">@asbsdr</span> 감사합니다</span>
+                    </div>
+                    <button type="button" class="like"> <span class="icon-heart black on"></span> </button>
+                  </div>
+                  <div class="util">
+                    <div>
+                      <button type="button">댓글 달기</button>
+                      &middot;
+                      <button type="button">좋아요 1개</button>
+                    </div>
+                    <div>
+                      <span class="created-at">12시간 전</span>
+                      &middot;
+                      <button type="button" onclick="onReplyRemove()">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-inner">
+                <div class="profile-bar">
+                  <span class="photo"
+                    style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                  <div>
+                    <span class="name">여행버튼</span>
+                    <span class="text">꺅 너무 근사해요 !!#$!</span>
+                  </div>
+                  <button type="button" class="like"> <span class="icon-heart black"></span> </button>
+                </div>
+                <div class="util">
+                  <div>
+                    <button type="button">댓글 달기</button>
+                    &middot;
+                    <button type="button">좋아요 1개</button>
+                  </div>
+                  <div>
+                    <span class="created-at">12시간 전</span>
+                    &middot;
+                    <button type="button" onclick="onReplyRemove()">삭제</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item re">
+                <div class="item-inner">
+                  <div class="profile-bar">
+                    <span class="photo"
+                      style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                    <div>
+                      <span class="name">여행버튼</span>
+                      <span class="text"><span class="at">@asbsdr</span> 감사합니다</span>
+                    </div>
+                    <button type="button" class="like"> <span class="icon-heart black on"></span> </button>
+                  </div>
+                  <div class="util">
+                    <div>
+                      <button type="button">댓글 달기</button>
+                      &middot;
+                      <button type="button">좋아요 1개</button>
+                    </div>
+                    <div>
+                      <span class="created-at">12시간 전</span>
+                      &middot;
+                      <button type="button" onclick="onReplyRemove()">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reply-write-wrapper">
+        <span class="like-count">좋아요 55개</span>
+        <input type="text" class="text" placeholder="댓글을 입력하세요.">
+        <button type="button" class="submit"><span class="icon-airplane"></span></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- e : 피드 게시물 상세 PC -->
+
+
+<!-- s : 공모전 업로드 -->
+<div class="modal modal-contest-upload" id="modal-contest-upload">
+  <div class="modal-title">
+    <h3 class="title">
+      공모전 업로드
+    </h3>
+    <button type="button" class="close"><span class="icon-close"></span></button>
+  </div>
+  <div class="modal-content">
+
+    <div class="modal-content-scrollable" style="max-height:500px">
+      <div class="contest-upload">
+        <div class="form">
+
+          <div class="form-group vertical none-border">
+            <div class="form-video-preview">
+              <div class="empty-vod">
+                <span class="icon-video"></span>
+                <p class="message">링크를 입력해 출품작을 등록하세요.</p>
+              </div>
+              <video class="vod" playsinline="" type="video/mp4" src="../../assets/images/example_vod.mp4"
+                loop=""></video>
+            </div>
+          </div>
+
+          <div class="form-group vertical none-border">
+            <div class="form-subject bold">
+              영상 링크 <span class="required"></span>
+            </div>
+            <div class="form-content">
+              <input type="text" class="input-text full" placeholder="영상 링크를 입력해 주세요.">
+            </div>
+          </div>
+
+          <div class="form-group vertical none-border">
+            <div class="form-subject bold">
+              카테고리 <span class="required"></span>
+            </div>
+            <div class="form-content">
+              <select name="" id="" class="form-select full">
+                <option value="">선택해 주세요.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group vertical none-border">
+            <div class="form-subject bold">
+              제목 <span class="required"></span>
+            </div>
+            <div class="form-content">
+              <input type="text" class="input-text full" placeholder="제목을 입력해 주세요.">
+            </div>
+          </div>
+
+          <div class="form-group vertical none-border">
+            <div class="form-subject bold">
+              내용
+            </div>
+            <div class="form-content">
+              <textarea class="textarea full" rows="10" placeholder="내용을 입력해 주세요."></textarea>
+            </div>
+
+            <div class="ui-message-box scrollable">
+              <div class="inner" style="max-height:115px;">
+                <p>출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는
+                  공모전에
+                  출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여 출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에
+                  관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여출품자는 공모전에 출품하는 작품에 관하여</p>
+              </div>
+            </div>
+
+            <input type="checkbox" class="input-checkbox" id="agree-check">
+            <label for="agree-check">콘텐츠 활용에 동의합니다</label>
+          </div>
+
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn-raised primary btn-large" onclick="handleClickContestSubmit(event)">출품하기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const handleClickContestSubmit = (e) => {
+    e.preventDefault();
+    openModal("modal-contest-confirm", false);
+  }
+</script>
+<!-- e : 공모전 업로드 -->
+
+<!-- s : 공모전 출품하기 -->
+<div class="modal modal-contest-confirm show-center" id="modal-contest-confirm">
+  <button type="button" onclick="closeModal('modal-contest-confirm')" class="close2"><span
+      class="icon-close"></span></button>
+  <div class="modal-content">
+    <div class="title">
+      [공모전 출품 시 최종확인]
+    </div>
+    <div class="text">
+      * 최종으로 출품하기 전 다시한번 확인 부탁드립니다.<br /> * 공모 요강에 맞지 않는 영상은 출품 심사에 통과할 수 없습니다.<br /> * 본인이 촬영한 영상만 제출 가능합니다
+      <br /><br />
+      <span class="primary">
+        (- 타인의 영상을 도용하거나 불법으로 다운로드한 영상을 제출하는 경우 법적 제재를 받을 수 있습니다. )<br />( - 이전 공모전에서 이미 출품한 영상을 다시 업로드하는 경우 불이익을 받을 수
+        있습니다. )
+      </span>
+    </div>
+  </div>
+  <div class="modal-button">
+    <a href="#" class="btn-raised primary btn-large">출품하기</a>
+  </div>
+</div>
+<!-- e : 공모전 출품하기 -->
+
+<!-- s : 토스트 메시지 -->
+<div class="modal modal-replies-remove toast-ui" id="modal-replies-remove">
+  <div class="modal-content">
+    <div class="message">
+      <button><span class="icon-vcheck-green"></span> 댓글을 삭제했습니다. 취소하려면 여기를 누르세요</button>
+    </div>
+  </div>
+</div>
+<!-- e : 토스트 메시지 -->
+
+<!-- s : 클립보드 복사 -->
+<div class="modal modal-message show-center" id="modal-clipboard-copy">
+  <div class="modal-content">
+    <div class="message">
+      <span class="icon-vcheck-green"></span> 클립보드에 복사되었습니다.
+    </div>
+  </div>
+</div>
+<!-- e : 클립보드 복사 -->
+
+<!-- s : 게시물 삭제 완료 -->
+<div class="modal modal-message show-center" id="modal-remove-feed-done">
+  <div class="modal-content">
+    <div class="message">
+      게시물이 삭제되었습니다.
+    </div>
+  </div>
+</div>
+<!-- e : 게시물 삭제 완료 -->
+
+<!-- s : 신고접수완료 -->
+<div class="modal modal-message show-center" id="modal-report-feed-done">
+  <div class="modal-content">
+    <div class="message">
+      <span class="icon-vcheck-green"></span> 신고를 접수했습니다.
+    </div>
+  </div>
+</div>
+<!-- e : 신고접수완료 -->
+
+<!-- s : 게시물 삭제 -->
+<div class="modal modal-remove-feed type-confirm show-center" id="modal-remove-feed">
+  <div class="modal-content">
+
+    <h3 class="title">
+      게시물을 삭제하시겠습니까?
+    </h3>
+
+    <div class="btns">
+      <button type="button" class="close cancel">취소</button>
+      <button type="button" class="confirm" onclick="closeModal(); openModal('modal-remove-feed-done')">삭제</button>
+    </div>
+  </div>
+</div>
+<!-- e : 게시물 삭제 -->
+
+<!-- s : 장바구니 담기 -->
+<div class="modal modal-add-cart type-confirm show-center" id="modal-add-cart">
+  <button type="button" class="close"><span class="icon-close"></span></button>
+  <div class="modal-content">
+
+    <div class="icon-wrapper">
+      <span class="icon-shopping-cart"></span>
+    </div>
+    <h3 class="title">
+      장바구니에 담겼습니다!
+    </h3>
+
+    <div class="btns direction-col">
+      <a href="#" class="confirm">장바구니 확인하기</a>
+      <a href="#" class="close cancel">다른 클립 구경하기</a>
+    </div>
+  </div>
+</div>
+<!-- e : 장바구니 담기 -->
+
+<!-- s : 게시물 신고 -->
+<div class="modal modal-report-feed" id="modal-report-feed">
+  <div class="modal-title">
+    <h3 class="title">
+      신고
+    </h3>
+    <button type="button" class="close"><span class="icon-close"></span></button>
+  </div>
+  <div class="modal-content">
+
+    <div class="report-feed">
+      <h3 class="title">이 계정을 신고 하는 이유가 무엇인가요?</h3>
+      <ul>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report1">
+          <label for="feed-report1">성적인 게시물</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report2">
+          <label for="feed-report2">폭력적 또는 혐오스러운 게시물</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report3">
+          <label for="feed-report3">증오 또는 학대하는 게시물</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report4">
+          <label for="feed-report4">유해하거나 위험한 행위</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report5">
+          <label for="feed-report5">스팸 또는 사용자를 현혹하는 게시물</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report6">
+          <label for="feed-report6">아동 학대</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report7">
+          <label for="feed-report7">따돌림 또는 괴롭힘</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report8">
+          <label for="feed-report8">지식재산권 침해</label>
+        </li>
+        <li>
+          <input type="radio" name="feed-report" id="feed-report9">
+          <label for="feed-report9">마음에 들지 않습니다</label>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="modal-button">
+    <button type="button" class="btn-raised primary full bold radius5"
+      onclick="closeModal(); openModal('modal-report-feed-done')">신고하기</button>
+  </div>
+</div>
+<!-- e : 게시물 신고 -->
+
+
+
+
+
+<!-- s : 댓글 -->
+<div class="modal modal-replies" id="modal-replies">
+  <div class="modal-title">
+    <h3 class="title">
+      댓글
+    </h3>
+    <button type="button" class="close"><span class="icon-close"></span></button>
+  </div>
+  <div class="modal-content">
+    <div class="replies-type-wrapper">
+      <div class="list">
+        <div class="item">
+          <div class="item-inner">
+            <div class="profile-bar">
+              <span class="photo"
+                style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+              <div>
+                <span class="name">여행버튼</span>
+                <span class="text">꺅 너무 근사해요 !!#$!</span>
+              </div>
+              <button type="button" class="like"> <span class="icon-heart black"></span> </button>
+            </div>
+            <div class="util">
+              <div>
+                <button type="button">댓글 달기</button>
+                &middot;
+                <button type="button">좋아요 1개</button>
+              </div>
+              <div>
+                <span class="created-at">12시간 전</span>
+                &middot;
+                <button type="button" onclick="onReplyRemove()">삭제</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item re">
+            <div class="item-inner">
+              <div class="profile-bar">
+                <span class="photo"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                <div>
+                  <span class="name">여행버튼</span>
+                  <span class="text"><span class="at">@asbsdr</span> 감사합니다</span>
+                </div>
+                <button type="button" class="like"> <span class="icon-heart black on"></span> </button>
+              </div>
+              <div class="util">
+                <div>
+                  <button type="button">댓글 달기</button>
+                  &middot;
+                  <button type="button">좋아요 1개</button>
+                </div>
+                <div>
+                  <span class="created-at">12시간 전</span>
+                  &middot;
+                  <button type="button" onclick="onReplyRemove()">삭제</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-inner">
+            <div class="profile-bar">
+              <span class="photo"
+                style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+              <div>
+                <span class="name">여행버튼</span>
+                <span class="text">꺅 너무 근사해요 !!#$!</span>
+              </div>
+              <button type="button" class="like"> <span class="icon-heart black"></span> </button>
+            </div>
+            <div class="util">
+              <div>
+                <button type="button">댓글 달기</button>
+                &middot;
+                <button type="button">좋아요 1개</button>
+              </div>
+              <div>
+                <span class="created-at">12시간 전</span>
+                &middot;
+                <button type="button" onclick="onReplyRemove()">삭제</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item re">
+            <div class="item-inner">
+              <div class="profile-bar">
+                <span class="photo"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                <div>
+                  <span class="name">여행버튼</span>
+                  <span class="text"><span class="at">@asbsdr</span> 감사합니다</span>
+                </div>
+                <button type="button" class="like"> <span class="icon-heart black on"></span> </button>
+              </div>
+              <div class="util">
+                <div>
+                  <button type="button">댓글 달기</button>
+                  &middot;
+                  <button type="button">좋아요 1개</button>
+                </div>
+                <div>
+                  <span class="created-at">12시간 전</span>
+                  &middot;
+                  <button type="button" onclick="onReplyRemove()">삭제</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reply-write-wrapper">
+      <input type="text" class="text" placeholder="댓글을 입력하세요.">
+      <button type="button" class="submit"><span class="icon-airplane"></span></button>
+    </div>
+  </div>
+</div>
+<script>
+  // 댓글 삭제
+  const onReplyRemove = () => {
+    console.log('remove');
+    closeModal();
+    openModal('modal-replies-remove')
+  }
+</script>
+<!-- e : 댓글 -->
+
+
+<!-- s : 피드 더보기 -->
+<div class="modal modal-feed-more" id="modal-feed-more">
+  <div class="modal-content">
+    <ul class="feed-more-select">
+      <li class="edit"><a href="" onclick="onFeedEdit(event)">수정</a></li>
+      <li><a href="" onclick="onFeedRemove(event)">삭제</a></li>
+      <li><a href="">@mmm._.jju님 팔로우하기</a></li>
+      <li><a href="">공유</a></li>
+      <li class="report" onclick="onFeedReport(event)"><a href="">신고</a></li>
+      <li><a href="#" onclick="onFeedCopy(event)">링크복사</a></li>
+      <li><a href="" class="close">취소</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  const onFeedEdit = (e) => {
+    e.preventDefault()
+    openModal()
+  }
+  const onFeedRemove = (e) => {
+    e.preventDefault();
+    closeModal()
+    openModal("modal-remove-feed")
+  }
+  const onFeedReport = (e) => {
+    e.preventDefault();
+    closeModal()
+    openModal("modal-report-feed")
+  }
+
+  const onFeedCopy = (e) => {
+    e.preventDefault();
+    closeModal()
+    openModal("modal-clipboard-copy")
+  }
+</script>
+<!-- e : 피드 더보기 -->
+
+<!-- s : 업로드 -->
+<div class="modal modal-upload" id="modal-upload">
+  <div class="modal-title">
+    <h3 class="title">
+      업로드
+    </h3>
+    <button type="button" class="close"><span class="icon-close"></span></button>
+  </div>
+  <div class="modal-content">
+
+    <ul class="upload-select">
+      <li class="post"><a href="">게시물</a></li>
+      <li class="contest"><a href="">공모전</a></li>
+      <li class="clip"><a href="">클립</a></li>
+    </ul>
+  </div>
+</div>
+<!-- e : 업로드 -->
+
+<!-- s : 햄버거 메뉴 -->
+<div class="modal modal-hamburger fullsize" id="modal-hamburger">
+  <div>
+    <div class="title-bar">
+      <div class="profile">
+        <img src="https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg" alt=""></span>
+        dddd님
+      </div>
+      <button type="button" class="close"><span class="icon-close"></span></button>
+    </div>
+
+    <ul class="navs">
+      <li><a href="">여행상품</a></li>
+      <li><a href="">클립</a></li>
+      <li><a href="">공모전</a></li>
+      <li><a href="">피드</a></li>
+    </ul>
+
+    <div class="nav-group">
+      <h3>고객센터</h3>
+      <ul>
+        <li><a href="">공지사항</a></li>
+        <li><a href="">문의하기</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <h3>내 계정</h3>
+      <ul>
+        <li><a href="">장바구니</a></li>
+        <li><a href="">마이페이지</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="footer">
+    <li>
+      <a href="">로그아웃</a>
+    </li>
+    <li>
+      <a href="">회원탈퇴</a>
+    </li>
+  </ul>
+</div>
+<!-- e : 햄버거 메뉴 -->
+
+<div id="modal-bg" class="modal-bg"></div>
+
+<script>
+  $(document).ready(function () {
+    const closeModal = () => {
+      $("#modal-bg").removeClass("show");
+      $('.modal.show').removeClass("show")
+    }
+    $('.modal .close').on("click", (e) => {
+      e.preventDefault()
+      console.log(e.target)
+
+      closeModal()
+    })
+    $("#modal-bg").on("click", () => {
+      closeModal()
+    })
+  })
+
+
+
+</script>

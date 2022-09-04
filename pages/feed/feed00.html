@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div data-include-path="../../html/_modal.html"></div>
+
+  <div id="wrap">
+
+    <div class="gnb-mobile" data-include-path="../../html/layout/_mobile-gnb.html"></div>
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : 모바일 헤더 -->
+    <div class="mobile-main-header">
+      <a href="#" class="hamburger" data-modal-target="modal-hamburger"><span class="menu-hamburger black"></span></a>
+      <div class="right">
+        <a href="#" class="add"><span class="menu-add black"></span></a>
+        <a href="#" class="notification"><span class="menu-notification black"></span></a>
+        <a href="#" class="cart"><span class="menu-cart black"></span></a>
+      </div>
+    </div>
+    <!-- e : 모바일 헤더 -->
+
+    <div id="container">
+      <div id="contents">
+
+        <!-- s : 피드 목록 -->
+        <div class="feeds">
+
+          <ul class="list">
+            <li class="item">
+              <div class="info">
+                <span class="img bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+                <div class="name-bar">
+                  <span class="name">니나노트립</span>
+                  <span class="address">제주특별자치도 제주시 구좌읍 번영로</span>
+                </div>
+
+                <div class="managed">
+                  <button type="button" class="follow">팔로우</button>
+                  <button type="button" data-modal-target="modal-feed-more" class="btn-more-dots more">더보기</button>
+                </div>
+              </div>
+              <div class="thumb">
+                <!-- pc에서만 모달 -->
+                <a href="#" onclick="openModal('modal-feed-detail')">
+                  <span class="img">
+                    <img src="https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg" alt="">
+                  </span>
+                </a>
+                <div class="pagers-wrapper">
+                  <div class="btns">
+                    <button type="button" class="btn-like"></button>
+                    <button type="button" class="btn-reply"></button>
+                  </div>
+                  <div class="pagers">
+                    <span class="pager"></span>
+                    <span class="pager active"></span>
+                    <span class="pager"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="content">오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!… <button type="button" class="more">더보기</button>
+                </div>
+
+                <div class="tags">#제주도 #억새밭축제 #혼자하는여행 #귤의나라 #좋아요</div>
+              </div>
+
+              <div class="replies-wrapper">
+                <div class="replies-more">
+                  <a href="#">댓글 6개 모두 보기</a>
+                </div>
+                <div class="replies">
+                  <div class="replies-item">
+                    <span class="name">string.33</span>
+                    <span class="text">너무 멋져요! 너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!</span>
+                  </div>
+                  <div class="replies-item">
+                    <span class="name">string.33</span>
+                    <span class="text">너무 멋져요!</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="info">
+                <span class="img bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+                <div class="name-bar">
+                  <span class="name">니나노트립</span>
+                  <span class="address">제주특별자치도 제주시 구좌읍 번영로</span>
+                </div>
+
+                <div class="managed">
+                  <button type="button" class="follow on">팔로우</button>
+                  <button type="button" data-modal-target="modal-feed-more" class="btn-more-dots more">더보기</button>
+                </div>
+              </div>
+              <div class="thumb">
+                <a href="">
+                  <span class="img">
+                    <img src="https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg" alt="">
+                  </span>
+                </a>
+                <div class="pagers-wrapper">
+                  <div class="btns">
+                    <button type="button" class="btn-like"></button>
+                    <button type="button" class="btn-reply"></button>
+                  </div>
+                  <div class="pagers">
+                    <span class="pager"></span>
+                    <span class="pager active"></span>
+                    <span class="pager"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="content">오랜만에 제주도 여행 황금빛 억세밭이 너무나 예뻐요!… <button type="button" class="more">더보기</button>
+                </div>
+
+                <div class="tags">#제주도 #억새밭축제 #혼자하는여행 #귤의나라 #좋아요</div>
+              </div>
+
+              <div class="replies-wrapper">
+                <div class="replies-more">
+                  <a href="#">댓글 6개 모두 보기</a>
+                </div>
+                <div class="replies">
+                  <div class="replies-item">
+                    <span class="name">string.33</span>
+                    <span class="text">너무 멋져요! 너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!너무 멋져요!</span>
+                  </div>
+                  <div class="replies-item">
+                    <span class="name">string.33</span>
+                    <span class="text">너무 멋져요!</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+      <!-- e : 피드 목록 -->
+
+    </div>
+  </div>
+
+  <div data-include-path="../../html/layout/_footer.html"></div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

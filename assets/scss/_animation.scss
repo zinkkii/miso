@@ -1,0 +1,15 @@
+.animation-bounce-horizontal {
+  animation-name: bounce-horizontal;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+@keyframes bounce-horizontal {
+  0% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}

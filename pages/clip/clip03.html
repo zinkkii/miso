@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script src="../../assets/js/common.js"></script>
+
+
+</head>
+
+<body>
+
+  <div data-include-path="../../html/_modal.html"></div>
+  <div id="wrap">
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <div id="header">
+      <div class="header-title-bar for-m">
+        <div class="container  none-border">
+          <div class="header-left">
+            <a href="" class="button-back"><span class="icon-back"></span></a>
+          </div>
+          <div class="header-center is-desc">
+            <h1 class="header-title" id="headerTitle">클립 업로드</h1>
+            <p class="desc">나의 클립을 업로드하고 판매해 보세요!</p>
+          </div>
+          <div class="header-right">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container" class="wide2">
+      <div id="contents">
+
+        <!-- s : 클립 업로드 -->
+        <div class="vod-clip-upload">
+
+          <div class="title-bar for-pc">
+            <h3 class="title">클립 업로드</h3>
+            <p class="desc">나의 클립을 업로드하고 판매해 보세요!</p>
+          </div>
+
+          <div class="form-wrapper vod-info">
+            <h3 class="form-title">동영상 정보</h3>
+
+            <div class="form bg-gray">
+
+              <div class="form-group vertical file">
+                <div class="form-file-upload">
+                  <input type="file">
+                  <span class="icon-file-upload"></span>
+                  <p class="text">이곳을 클릭해서 파일을 업로드하세요</p>
+                </div>
+              </div>
+
+              <div class="info">
+
+                <div class="form-group vertical">
+                  <div class="form-subject">
+                    제목
+                  </div>
+                  <div class="form-content">
+                    <input type="text" class="input-text full" placeholder="제목을 입력해 주세요.">
+                  </div>
+                </div>
+
+                <div class="form-group vertical">
+                  <div class="form-subject">
+                    가격
+                  </div>
+                  <div class="form-content">
+                    <div class="form-row">
+                      <input type="text" class="input-text full" placeholder="가격을 입력해 주세요.">
+                    </div>
+                    <input type="checkbox" id="default-price" class="input-checkbox">
+                    <label for="default-price" class="color-sub">가격을 정하지 못할 땐? 여행버튼 기본 가격으로 등록하기</label>
+                  </div>
+
+                </div>
+
+                <div class="form-group vertical">
+                  <div class="form-subject">
+                    동영상 키워드
+                  </div>
+                  <div class="form-content">
+                    <input type="text" class="input-text full color-primary" placeholder="# 키워드를 입력해 주세요.">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-wrapper vod-location">
+            <h3 class="form-title">동영상 위치</h3>
+
+            <div class="form bg-gray">
+
+              <div class="form-group vertical map-form">
+                <div id="map" class="map">
+                  <img src="../../assets/images/example_map@2x.png" alt="" width="100%">
+                </div>
+              </div>
+
+              <div class="form-group vertical address-form">
+                <div class="form-subject">
+                  검색할 주소
+                </div>
+                <div class="form-content">
+                  <div class="form-row">
+                    <input type="text" class="input-text full" placeholder="주소를 입력해 주세요.">
+                    <button type="button" class="btn-raised primary radius3" style="width:130px">검색</button>
+                  </div>
+                </div>
+
+                <div class="ui-message-box">
+                  <p>※ 검색 후 상세위치는 마우스로 이동 및 클릭하여 지정 후, 저장 버튼을 눌러주세요. </p>
+                  <ul>
+                    <li>* 촬영된 영상소스의 위치만을 입력해 주세요.</li>
+                    <li>* 해외에서 촬영한 영상은 위치지정을 하지 말아주세요.</li>
+                    <li>* 촬영 영상소스와 위치지정은 검색/판매에 도움이 되지 않습니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn-raised primary radius20 btn-large bold">등록</a>
+          </div>
+
+        </div>
+        <!-- e : 클립 업로드 -->
+
+      </div>
+    </div>
+
+    <div data-include-path="../../html/layout/_footer.html"></div>
+  </div>
+
+
+
+
+</body>
+
+</html>

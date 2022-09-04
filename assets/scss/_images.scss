@@ -1,0 +1,244 @@
+// images
+.icon-sns-facebook {
+  @include img-background("../images/icon-sns-facebook.svg", 25px, 25px);
+}
+
+.icon-sns-instagram {
+  @include img-background("../images/icon-sns-instagram.svg", 25px, 25px);
+}
+.icon-sns-blog {
+  @include img-background("../images/icon-sns-blog.svg", 25px, 25px);
+}
+
+.icon-close {
+  @include img-background("../images/icon-close.svg", 15px, 15px);
+}
+
+.icon-back {
+  @include img-background("../images/icon-back.svg", 8px, 16px);
+  &.wh {
+    @include img-background("../images/icon-back-wh.svg", 8px, 16px);
+  }
+}
+
+.icon-sns-google {
+  @include img-background2x("../images/icon-sns-google.png", 34px, 34px);
+}
+
+.icon-select-arrow {
+  @include img-background("../images/icon-select-arrow.svg", 8px, 4px);
+}
+
+.menu-hamburger {
+  @include img-background2x("../images/menu-hamburger.png", 20px, 16px);
+  &.black {
+    @include img-background2x("../images/menu-hamburger-bk.png", 20px, 16px);
+  }
+}
+.menu-add {
+  @include img-background2x("../images/menu-add.png", 17px, 17px);
+  &.black {
+    @include img-background("../images/menu-add-bk.svg", 17px, 17px);
+  }
+  @include responsive-to {
+    &.black {
+      @include img-background("../images/menu-add-bk.svg", 23px, 23px);
+    }
+  }
+}
+.menu-notification {
+  @include img-background2x("../images/menu-notification.png", 15px, 19px);
+  &.black {
+    @include img-background("../images/menu-notification-bk.svg", 15px, 19px);
+  }
+  @include responsive-to {
+    &.black {
+      @include img-background("../images/menu-notification-bk.svg", 18px, 23px);
+    }
+  }
+}
+.menu-cart {
+  @include img-background2x("../images/menu-cart.png", 19px, 19px);
+  &.black {
+    @include img-background("../images/menu-cart-bk.svg", 19px, 19px);
+  }
+  @include responsive-to {
+    &.black {
+      @include img-background("../images/menu-cart-bk.svg", 23px, 23px);
+    }
+  }
+}
+
+.icon-add {
+  @include img-background2x("../images/icon-add.png", 62px, 62px);
+}
+
+.icon-heart {
+  @include img-background("../images/icon-heart-off.svg", 15px, 14px);
+  &.on {
+    @include img-background("../images/icon-heart-on.svg", 15px, 14px);
+  }
+  &.black {
+    @include img-background(
+      "../../assets/images/icon-heart-black-off.svg",
+      16px,
+      15px
+    );
+    &.on {
+      @include img-background(
+        "../../assets/images/icon-heart-black-on.svg",
+        16px,
+        15px
+      );
+    }
+  }
+}
+
+.arrow-right {
+  @include img-background("../images/arrow-right.svg", 8px, 16px);
+}
+
+.icon-post {
+  @include img-background2x("../images/icon-post.png", 48px, 48px);
+}
+.icon-clip {
+  @include img-background2x("../images/icon-clip.png", 48px, 48px);
+}
+.icon-contest {
+  @include img-background2x("../images/icon-contest.png", 48px, 48px);
+}
+
+.icon-like {
+  @include img-background(
+    "../../assets/images/icon-heart-black-off.svg",
+    16px,
+    15px
+  );
+  &.on {
+    @include img-background(
+      "../../assets/images/icon-heart-black-on.svg",
+      16px,
+      15px
+    );
+  }
+}
+
+.icon-reply {
+  @include img-background("../../assets/images/icon-comment.svg", 14px, 14px);
+  &.wh {
+    @include img-background(
+      "../../assets/images/icon-comment-wh.svg",
+      14px,
+      14px
+    );
+  }
+}
+.icon-more-dots {
+  @include img-background("../../assets/images/icon-more-dots.svg", 19px, 3px);
+  &.wh {
+    @include img-background(
+      "../../assets/images/icon-more-dots-wh.svg",
+      19px,
+      3px
+    );
+  }
+}
+
+.icon-map {
+  @include img-background2x("../../assets/images/icon-map.png", 22px, 24px);
+}
+
+.icon-airplane {
+  @include img-background("../../assets/images/icon-airplane.svg", 21px, 19px);
+}
+
+.icon-vcheck-green {
+  @include img-background(
+    "../../assets/images/icon-vcheck-green.svg",
+    21px,
+    21px
+  );
+}
+
+.icon-arrow-left-circle {
+  @include img-background(
+    "../../assets/images/icon-arrow-left-circle.svg",
+    32px,
+    32px
+  );
+}
+
+.icon-arrow-right-circle {
+  @include img-background(
+    "../../assets/images/icon-arrow-right-circle.svg",
+    32px,
+    32px
+  );
+}
+
+.icon-search {
+  @include img-background("../../assets/images/icon-search.svg", 15px, 16px);
+}
+
+.icon-shopping-cart {
+  @include img-background2x(
+    "../../assets/images/icon-shopping-cart.png",
+    40px,
+    40px
+  );
+}
+
+.icon-file-upload {
+  @include img-background(
+    "../../assets/images/icon-file-upload.svg",
+    44px,
+    44px
+  );
+}
+
+.icon-recommend {
+  @include img-background2x(
+    "../../assets/images/icon-recommend-off.png",
+    21px,
+    19px
+  );
+  &.on {
+    @include img-background2x(
+      "../../assets/images/icon-recommend-on.png",
+      21px,
+      19px
+    );
+  }
+}
+
+.icon-video {
+  @include img-background2x("../../assets/images/icon-video.png", 29px, 19px);
+}
+
+.icon-vcheck {
+  @include img-background("../../assets/images/icon-vcheck.svg", 24px, 15px);
+}
+
+.icon-vcheck-circle {
+  @include img-background("../../assets/images/icon-vcheck.svg", 24px, 15px);
+  width: 62px;
+  height: 62px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+
+.img-logo {
+  @include img-background2x("../../assets/images/logo-pc.png", 102px, 39px);
+}
+
+.icon-search-wh {
+  @include img-background("../../assets/images/icon-search-wh.svg", 38px, 38px);
+}
+
+.icon-close-wh {
+  @include img-background("../../assets/images/icon-close-wh.svg", 22px, 22px);
+}
+
+.icon-share {
+  @include img-background("../../assets/images/icon-share.svg", 19px, 20px);
+}

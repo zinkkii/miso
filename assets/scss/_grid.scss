@@ -1,0 +1,146 @@
+/* grid */
+$grid-columns:12;
+
+// @for $i from 1 through $grid-columns {
+//   &.s#{$i} {
+//   	width:100% / (($grid-columns+1) - $i);
+//   	margin-left:auto;
+// 	left:auto;
+// 	right:auto;
+//   }
+// }
+
+.row {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15px;
+	&:after {
+		content:'';
+		clear:both;
+		display:table;
+	}
+	&.no-marginbottom {
+		margin-bottom:0;
+	}
+	.col {
+		position:relative;
+		float:left;
+		box-sizing:border-box;
+		padding:0 0.75em;
+		min-height:1px;
+		&.first {
+			padding-left:0;
+		}
+		&.s1 {
+			width:8.3333333333%;
+		}
+		&.s2 {
+			@extend .s1;
+			width:16.6%;
+		}
+		&.s3 {
+			@extend .s1;
+			width:24%;
+		}
+		&.s4 {
+			@extend .s1;
+			width:32.4%;
+		}
+		&.s6 {
+			@extend .s1;
+			width:50%;
+		}
+		&.s8 {
+			@extend .s1;
+			width:66.6%;
+		}
+		&.s9 {
+			@extend .s1;
+			width:75%;
+		}
+		&.s10 {
+			@extend .s1;
+			width:83.4%;
+		}
+		&.s12 {
+			@extend .s1;
+			width:100%;
+		}
+
+		&.m6 {
+			@extend .s1;
+		    width: 50%;
+		}
+		&.l2 {
+			@extend .s1;
+			width:16.6%;
+		}
+		&.l3 {
+			@extend .s1;
+		    width: 25%;
+		}
+		&.l4 {
+			@extend .s1;
+		    width: 33%;
+		}
+		&.l8 {
+			@extend .s1;
+		    width: 66.6666666667%;
+		}
+		&.offset-s6 {
+			margin-left:50%;
+		}
+		&.vline-right{
+			&:after{
+				display: block;
+				content:'';
+				height:80%;
+				width:1px;
+				background-color:#eee;
+				position:absolute;
+				right:0;
+				top:10%;
+			}
+		}
+		&.vline-left{
+			@extend .vline-right;
+			&:after{
+				left:0;
+				right:auto;
+			}
+		}
+	}
+}
+
+
+/* card */
+.card {
+	position:relative;
+	background-color:#fff;
+	box-shadow:0 2px 2px rgba(0,0,0,.05),0 3px 1px -2px rgba(0,0,0,.08),0 1px 5px 0 rgba(0,0,0,.08);
+	margin:0.5em 0 1em 0;
+	.card-content {
+		padding:20px;
+		border-radius:0 0 2px 2px;
+	}
+	.card-title {
+		line-height: 24px;
+	    font-size: 1.2em;
+	    font-weight: 700;
+	    display: block;
+	    margin-bottom: 20px;
+	    text-transform: uppercase;
+	    color: rgba(0,0,0,.54);
+	}
+	.card-stitle {
+		line-height: 20px;
+	    font-size: 1em;
+	    font-weight: 700;
+	    display: block;
+	    margin-bottom: 10px;
+	    text-transform: uppercase;
+	    color: rgba(0,0,0,.34);
+	}
+
+}
+

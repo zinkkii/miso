@@ -1,0 +1,7 @@
+<svg id="upload_3" data-name="upload 3" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="타원_165" data-name="타원 165" fill="none" stroke="#2b2b2b" stroke-width="1">
+    <circle cx="22" cy="22" r="22" stroke="none"/>
+    <circle cx="22" cy="22" r="21.5" fill="none"/>
+  </g>
+  <path id="upload" d="M13.7,6.274V15.83H11.988V6.274L9.214,9.049,8,7.839,12.843,3l4.839,4.839L16.473,9.049ZM6.855,17.541H18.83a.855.855,0,0,1,0,1.711H6.855a.855.855,0,0,1,0-1.711Z" transform="translate(9.156 10.874)" fill="#2b2b2b" fill-rule="evenodd"/>
+</svg>

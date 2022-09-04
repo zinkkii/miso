@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <script src="../../assets/js/common.js"></script>
+
+
+</head>
+
+<body>
+
+  <div data-include-path="../../html/_modal.html"></div>
+  <div id="wrap" class="bg-white">
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : 비디오 클립 검색 -->
+    <div class="vod-clip-search for-pc">
+      <div class="container">
+        <h1>비디오 클립</h1>
+        <p>Video clip</p>
+        <div class="search-form">
+          <span class="icon-search"></span>
+          <input type="search" class="search-input" placeholder="제목 또는 지역명을 입력해 주세요.">
+        </div>
+      </div>
+    </div>
+    <!-- e : 비디오 클립 검색 -->
+
+
+    <!-- s : 모바일 헤더 -->
+    <div class="mobile-main-header">
+      <a href="#" class="hamburger" data-modal-target="modal-hamburger"><span class="menu-hamburger black"></span></a>
+      <div class="right">
+        <a href="#" class="add"><span class="menu-add black"></span></a>
+        <a href="#" class="notification"><span class="menu-notification black"></span></a>
+        <a href="#" class="cart"><span class="menu-cart black"></span></a>
+      </div>
+    </div>
+    <!-- e : 모바일 헤더 -->
+
+    <div id="container" class="wide">
+      <div id="contents">
+
+        <!-- s : 클립 상세 -->
+        <div class="vod-clip-detail">
+
+          <div class="title-bar">
+            <a href="" class="back"><span class="icon-back"></span></a>
+
+            <span class="bg-cover"
+              style="background-image:url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+            <div>
+              <span class="name">여행버튼</span>
+              <span class="address">제주특별자치도 제주시 구좌읍 번영로</span>
+            </div>
+
+          </div>
+
+          <div class="vod-wrapper">
+            <video class="vod" playsinline="" type="video/mp4" src="../../assets/images/example_vod.mp4"
+              loop=""></video>
+          </div>
+
+          <div class="body">
+
+            <div class="content-wrapper vod-info">
+              <h4 class="title">비행기 안 화면</h4>
+              <div class="content">
+                <ul>
+                  <li>
+                    <span class="label">클립 길이 : </span>
+                    <span class="cont">0:00:00</span>
+                  </li>
+                  <li>
+                    <span class="label">클립 사이즈 : </span>
+                    <span class="cont">1920 x 1080</span>
+                  </li>
+                  <li>
+                    <span class="label">파일 사이즈 : </span>
+                    <span class="cont">26.22 MB</span>
+                  </li>
+                  <li>
+                    <span class="label">프레임 레이트 : </span>
+                    <span class="cont">24 fps</span>
+                  </li>
+                  <li>
+                    <span class="label">클립 가격 : </span>
+                    <span class="cont price primary">10,000원</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="content-wrapper vod-clip-keyword">
+              <h4 class="title">클립 키워드</h4>
+              <div class="content">
+                <ul>
+                  <li>겨울</li>
+                  <li>봄</li>
+                  <li>여름</li>
+                  <li>가을</li>
+                  <li>겨울</li>
+                  <li>봄</li>
+                  <li>여름</li>
+                  <li>가을</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="content-wrapper vod-clip-location">
+              <h4 class="title">동영상 위치</h4>
+              <div class="content">
+                <div id="map" class="map">
+                  <img src="../../assets/images/example_map@2x.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-group multiple">
+            <a href="#" onclick="handleClickAddCart(event)" class="btn-raised gray2 radius5 btn-xl bold">장바구니</a>
+            <a href="#" class="btn-raised primary radius5 btn-xl  bold">바로구매</a>
+          </div>
+
+        </div>
+        <!-- e : 클립 상세 -->
+
+        <!-- s : 클립 상세 PC -->
+        <div class="vod-clip-detail pc">
+
+          <div class="vod-row">
+
+            <div class="vod-wrapper">
+              <video class="vod" playsinline="" type="video/mp4" src="../../assets/images/example_vod.mp4"
+                loop=""></video>
+            </div>
+
+            <div class="col">
+
+              <div class="title-bar">
+                <span class="profile bg-cover"
+                  style="background-image:url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg)"></span>
+                <div>
+                  <span class="name">여행버튼</span>
+                  <span class="address">제주특별자치도 제주시 구좌읍 번영로</span>
+                </div>
+
+              </div>
+
+              <div class="content-wrapper vod-info">
+                <h4 class="title">비행기 안 화면</h4>
+                <div class="content">
+
+                  <ul>
+                    <li>
+                      <h5>관련 정보</h5>
+                    </li>
+                    <li>
+                      <span class="label">클립 길이 : </span>
+                      <span class="cont">0:00:00</span>
+                    </li>
+                    <li>
+                      <span class="label">클립 사이즈 : </span>
+                      <span class="cont">1920 x 1080</span>
+                    </li>
+                    <li>
+                      <span class="label">파일 사이즈 : </span>
+                      <span class="cont">26.22 MB</span>
+                    </li>
+                    <li>
+                      <span class="label">프레임 레이트 : </span>
+                      <span class="cont">24 fps</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price">
+                  <span class="label">클립 가격</span>
+                  <span class="cont">10,000원</span>
+                </div>
+              </div>
+
+              <div class="btn-group multiple">
+                <a href="#" onclick="handleClickAddCart(event)" class="btn-cart">장바구니</a>
+                <a href="#" class="btn-checkout">바로구매</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="keyword-row">
+
+            <div class="content-wrapper vod-clip-keyword">
+              <h4 class="title">클립 키워드</h4>
+              <div class="content">
+                <ul>
+                  <li>겨울</li>
+                  <li>봄</li>
+                  <li>여름</li>
+                  <li>가을</li>
+                  <li>겨울</li>
+                  <li>봄</li>
+                  <li>여름</li>
+                  <li>가을</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content-wrapper vod-clip-location">
+              <h4 class="title">위치</h4>
+              <div class="content">
+                <div id="map" class="map">
+                  <img src="../../assets/images/example_map@2x.png" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- e : 클립 상세 PC -->
+
+      </div>
+    </div>
+
+    <div data-include-path="../../html/layout/_footer.html"></div>
+  </div>
+
+
+  <script>
+
+    const handleClickAddCart = (e) => {
+      e.preventDefault();
+      openModal("modal-add-cart")
+    }
+  </script>
+
+
+
+</body>
+
+</html>
