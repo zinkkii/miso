@@ -144,10 +144,6 @@
   margin: 0 auto;
   background-color: #fff;
   padding-bottom: 30px;
-  display: flex;
-  // @include responsive-to {
-  //   margin-top: 6px;
-  // }
   &.full {
     max-width: 100%;
   }

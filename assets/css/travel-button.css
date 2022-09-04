@@ -2572,7 +2572,6 @@ button:disabled {
   margin: 0 auto;
   background-color: #fff;
   padding-bottom: 30px;
-  display: flex;
 }
 #container.full {
   max-width: 100%;
@@ -4541,6 +4540,7 @@ body.popup-active.hide .popup-modal-bg {
 }
 .contents-main .main-product-list {
   margin-top: 30px;
+  overflow: hidden;
 }
 .contents-main .main-product-list .title-bar {
   padding-left: 20px;

@@ -1232,7 +1232,6 @@ button:disabled {
   margin: 0 auto;
   background-color: #fff;
   padding-bottom: 30px;
-  display: flex;
 }
 #container.full {
   max-width: 100%;
