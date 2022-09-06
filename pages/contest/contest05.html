@@ -3,11 +3,8 @@
 
 <head>
   <div data-include-path="../../html/layout/_head.html"></div>
-
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
   <script src="../../assets/js/common.js"></script>
-
 </head>
 
 <body>
@@ -15,9 +12,10 @@
   <div data-include-path="../../html/_modal.html"></div>
   <div id="wrap">
 
-    <!-- s : header -->
-    <div data-include-path="../../html/layout/_header.html" data-header-title="공모전 업로드"></div>
-    <!-- e : header -->
+    <div id="header" class="none-border">
+      <div data-include-path="../../html/layout/_header-mobile.html" data-header-title="" data-is-close="false"></div>
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
 
     <div id="container">
       <div id="contents">

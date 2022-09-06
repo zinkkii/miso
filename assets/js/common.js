@@ -1,44 +1,17 @@
-// function includeHTML() {
-//   var z, i, elmnt, file, xhttp;
-//   /* Loop through a collection of all HTML elements: */
-//   z = document.getElementsByTagName("*");
-//   for (i = 0; i < z.length; i++) {
-//     elmnt = z[i];
-//     /*search for elements with a certain atrribute:*/
-//     file = elmnt.getAttribute("data-include-path");
-//     if (file) {
-//       /* Make an HTTP request using the attribute value as the file name: */
-//       xhttp = new XMLHttpRequest();
-//       xhttp.onreadystatechange = function () {
-//         if (this.readyState == 4) {
-//           if (this.status == 200) {
-//             elmnt.innerHTML = this.responseText;
-//           }
-//           if (this.status == 404) {
-//             elmnt.innerHTML = "Page not found.";
-//           }
-//           /* Remove the attribute, and call this function once more: */
-//           elmnt.removeAttribute("data-include-path");
-//           includeHTML();
-//         }
-//       };
-//       xhttp.open("GET", file, true);
-//       xhttp.send();
-//       /* Exit the function: */
-//       return;
-//     }
-//   }
-// }
-
-// /* ✨ 실행 */
-// window.addEventListener("DOMContentLoaded", () => {
-//   includeHTML();
-// });
-
 $(document).ready(function () {
   $("[data-include-path]").each((index, e) => {
-    console.log(e.dataset.includePath);
-    $(e).load(e.dataset.includePath, () => {});
+    let headerTitle = e.dataset.headerTitle;
+    let headerIsClose = e.dataset.isClose;
+
+    // 모바일 헤더 설정
+    $(e).load(e.dataset.includePath, () => {
+      if (e.dataset.includePath === "../../html/layout/_header-mobile.html") {
+        $("#headerTitle").html(headerTitle);
+        if (headerIsClose === "false") {
+          $("#headerClose").css("display", "none");
+        }
+      }
+    });
   });
 
   const openModal = (target) => {
