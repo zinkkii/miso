@@ -3163,12 +3163,16 @@ input[type=radio] + label,
   height: 32px;
   line-height: 32px;
   margin-right: 5px;
-  font-size: 12px;
+  font-size: 14px;
   transition: 0.28s ease;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+input[type=radio] + label.size-small,
+.input-radio + label.size-small {
+  font-size: 12px;
 }
 input[type=radio] + label.color-sub,
 .input-radio + label.color-sub {
@@ -3215,17 +3219,6 @@ input[type=radio] + label:last-child,
   top: 7px;
   left: 4px;
   z-index: 0;
-}
-.input-checkbox:not(:checked) + label.box-type1:after {
-  width: 15px;
-  height: 15px;
-  border: 0;
-  background-image: url("../images/input_checkbox_off.png");
-  -khtml-background-size: 15px 15px;
-  -ms-background-size: 15px 15px;
-  background-size: 15px 15px;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 .input-checkbox:checked + label:before {
   top: 8px;
@@ -3421,6 +3414,10 @@ select.form-select {
   border-color: #e2e2e2;
 }
 
+.form.border {
+  border-bottom: 1px solid #f0f0f0;
+}
+
 .form-group {
   display: flex;
   align-items: center;
@@ -3429,7 +3426,15 @@ select.form-select {
   border-bottom: 1px solid #f0f0f0;
 }
 .form-group.none-border {
-  border: 0;
+  border-bottom: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.form-group.none-border:first-child {
+  padding-top: 16px;
+}
+.form-group.none-border:last-child {
+  padding-bottom: 16px;
 }
 .form-group.vertical {
   display: block;
@@ -3461,13 +3466,16 @@ select.form-select {
   font-weight: bold;
 }
 .form-group .form-subject .required {
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #f29639;
+  color: #f41f1f;
   display: block;
-  margin-left: 9px;
-  margin-top: -2px;
+  margin-right: 2px;
+}
+.form-group .form-subject .required:before {
+  content: "*";
+  display: block;
+}
+.form-group .form-subject.size-small {
+  font-size: 12px;
 }
 .form-group .form-content {
   flex: 1;
@@ -3500,6 +3508,9 @@ select.form-select {
   position: absolute;
   left: 0;
   top: 2px;
+}
+.form-group .helper-text.warning {
+  color: #f85858;
 }
 @media screen and (min-width: 768px) {
   .form-group .helper-text {
@@ -6869,6 +6880,15 @@ body.popup-active.hide .popup-modal-bg {
   border-top: 1px solid #333;
   margin-bottom: 23px;
 }
+.cart-group .title-bar {
+  border-bottom: 1px solid #cbcbcb;
+  padding: 12px 0;
+}
+.cart-group .title-bar h3 {
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+}
 
 .cart-selected-all {
   display: flex;
@@ -6988,6 +7008,94 @@ body.popup-active.hide .popup-modal-bg {
 }
 .info-row-group .info-row .primary {
   color: #f29639;
+}
+
+.contents-order .btn-more {
+  font-size: 11px;
+  border: 1px solid #707070;
+  padding: 8px 30px;
+}
+.contents-order .cart-group {
+  margin-bottom: 33px;
+}
+.contents-order .cart-group.payment-price .options {
+  flex: 1;
+}
+.contents-order .cart-group.payment-price .options li {
+  padding: 8.5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.contents-order .cart-group.payment-price .options li .label {
+  font-weight: bold;
+}
+.contents-order .cart-group.payment-price .options li .content {
+  color: #868686;
+}
+.contents-order .cart-group.payment-price .total-price .content {
+  font-size: 21px;
+}
+
+.order-prodict-list .item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.order-prodict-list .item .info-wrapper {
+  display: flex;
+}
+.order-prodict-list .item .thumb {
+  width: 102px;
+  height: 102px;
+  display: block;
+  border-radius: 7px;
+}
+.order-prodict-list .item .info {
+  flex: 1;
+  margin-left: 15px;
+  padding-top: 3px;
+}
+.order-prodict-list .item .info .name {
+  font-weight: bold;
+  font-size: 12px;
+}
+.order-prodict-list .item .info .options {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.order-prodict-list .item .info .options li {
+  padding: 4px 0;
+}
+.order-prodict-list .item .info .options .label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.order-prodict-list .item .info .options .price {
+  color: #868686;
+}
+.order-prodict-list .item .price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+.order-prodict-list .item .price-wrapper .created-at {
+  font-size: 12px;
+}
+.order-prodict-list .item .price-wrapper .price {
+  color: #f29639;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contents-special-terms {
+  border-top: 1px solid #333;
+  padding: 20px;
+  line-height: 20px;
+}
+.contents-special-terms .strong {
+  font-weight: bold;
 }
 
 .ui-tabs {
