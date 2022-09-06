@@ -1269,6 +1269,7 @@ button:disabled {
 }
 @media screen and (min-width: 768px) {
   #container.mypage-container {
+    display: flex;
     border: 1px solid #dadada;
     margin-top: 37px;
     margin-bottom: 37px;

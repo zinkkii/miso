@@ -2645,6 +2645,7 @@ button:disabled {
 }
 @media screen and (min-width: 768px) {
   #container.mypage-container {
+    display: flex;
     border: 1px solid #dadada;
     margin-top: 37px;
     margin-bottom: 37px;
@@ -7026,10 +7027,16 @@ body.popup-active.hide .popup-modal-bg {
   flex: 0 0 auto;
 }
 @media screen and (min-width: 768px) {
+  .ui-tabs ul {
+    height: 55px;
+  }
   .ui-tabs ul li a {
     font-size: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 55px;
+    line-height: 55px;
+  }
+  .ui-tabs ul li.current a {
+    height: 55px;
   }
 }
 
