@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="header" class="none-border">
+      <div data-include-path="../../html/layout/_header-mobile.html"></div>
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : container -->
+    <div id="container">
+
+      <!-- s : contents -->
+      <div id="contents">
+
+        <!-- s : 장바구니 -->
+        <div class="contents-cart">
+
+
+          <!-- s : 주문상품 목록 -->
+          <div class="cart-group">
+
+            <div class="info-row-group">
+              <div class="info-row">
+                <div class="subject bold">주문상품</div>
+                <div class="content bold">2개</div>
+              </div>
+            </div>
+
+
+
+            <div class="cart-list">
+              <div class="item">
+                <span class="thumb bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+                <div class="info">
+                  <span class="name">인천 송도 스테이크 맛집 투어</span>
+                  <span class="price">20,000원</span>
+                </div>
+
+
+
+              </div>
+
+              <div class="item">
+
+                <span class="thumb bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+                <div class="info">
+                  <span class="name">인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어</span>
+                  <span class="price">20,000원</span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- e : 주문상품 목록 -->
+
+          <!-- s : 결제수단 -->
+          <div class="cart-group">
+
+            <div class="info-row-group">
+              <div class="info-row">
+                <div class="subject">결제 수단</div>
+              </div>
+              <div class="info-row">
+                <div class="subject">
+                  <input type="radio" name="payment-method" id="payment-method1">
+                  <label for="payment-method1">신용,체크카드</label>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="subject">
+                  <input type="radio" name="payment-method" id="payment-method2">
+                  <label for="payment-method2">실시간 계좌이체</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- e : 결제수단 -->
+
+          <!-- s : 결제 금액 -->
+          <div class="cart-group">
+
+            <div class="info-row-group">
+              <div class="info-row">
+                <div class="subject">최종 결제 금액</div>
+                <div class="content bold primary">29,000원</div>
+              </div>
+            </div>
+          </div>
+          <!-- e : 결제 금액 -->
+
+          <div class="btn-group multiple footer-fixed">
+            <a href="#" class="btn-raised primary radius5 btn-xl  bold">결제하기</a>
+          </div>
+
+
+
+        </div>
+        <!-- e : 장바구니 -->
+
+      </div>
+      <!-- e : contents -->
+
+    </div>
+    <!-- e : container -->
+
+
+
+    <!-- s : footer -->
+    <div data-include-path="../../html/layout/_footer.html"></div>
+    <!-- e : footer -->
+
+  </div>
+
+</body>
+
+</html>

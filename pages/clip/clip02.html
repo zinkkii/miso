@@ -45,6 +45,7 @@
     </div>
     <!-- e : 모바일 헤더 -->
 
+    <!-- s : container -->
     <div id="container" class="wide">
       <div id="contents">
 
@@ -126,7 +127,7 @@
             </div>
           </div>
 
-          <div class="btn-group multiple">
+          <div class="btn-group multiple footer-fixed">
             <a href="#" onclick="handleClickAddCart(event)" class="btn-raised gray2 radius5 btn-xl bold">장바구니</a>
             <a href="#" class="btn-raised primary radius5 btn-xl  bold">바로구매</a>
           </div>
@@ -230,13 +231,14 @@
 
       </div>
     </div>
+    <!-- e : container -->
 
     <div data-include-path="../../html/layout/_footer.html"></div>
   </div>
+  <!-- e : wrap -->
 
 
   <script>
-
     const handleClickAddCart = (e) => {
       e.preventDefault();
       openModal("modal-add-cart")

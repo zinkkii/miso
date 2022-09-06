@@ -1,56 +1,50 @@
-// html 파일 인클루드
-// window.addEventListener("load", function () {
-//   var allElements = document.getElementsByTagName("*");
-
-//   Array.prototype.forEach.call(allElements, function (el) {
-//     var includePath = el.dataset.includePath;
-
-//     if (includePath) {
-//       var xhttp = new XMLHttpRequest();
+// function includeHTML() {
+//   var z, i, elmnt, file, xhttp;
+//   /* Loop through a collection of all HTML elements: */
+//   z = document.getElementsByTagName("*");
+//   for (i = 0; i < z.length; i++) {
+//     elmnt = z[i];
+//     /*search for elements with a certain atrribute:*/
+//     file = elmnt.getAttribute("data-include-path");
+//     if (file) {
+//       /* Make an HTTP request using the attribute value as the file name: */
+//       xhttp = new XMLHttpRequest();
 //       xhttp.onreadystatechange = function () {
-//         if (this.readyState == 4 && this.status == 200) {
-//           el.outerHTML = this.responseText;
+//         if (this.readyState == 4) {
+//           if (this.status == 200) {
+//             elmnt.innerHTML = this.responseText;
+//           }
+//           if (this.status == 404) {
+//             elmnt.innerHTML = "Page not found.";
+//           }
+//           /* Remove the attribute, and call this function once more: */
+//           elmnt.removeAttribute("data-include-path");
+//           includeHTML();
 //         }
 //       };
-//       xhttp.open("GET", includePath, true);
+//       xhttp.open("GET", file, true);
 //       xhttp.send();
-
-//       setTimeout(() => {
-//         const headerTitleText = el.dataset.headerTitle;
-//         const isBack = el.dataset.headerBack;
-//         const isClose = el.dataset.headerClose;
-
-//         const headerTitle = document.querySelector("#headerTitle");
-//         const headerBack = document.querySelector("#headerBack");
-//         const headerClose = document.querySelector("#headerClose");
-
-//         console.log(headerTitle);
-//         if (headerTitle && headerTitleText) {
-//           headerTitle.innerHTML = headerTitleText;
-//         }
-
-//         if (headerBack && isBack === "false") {
-//           headerBack.style.display = "none";
-//         }
-
-//         if (headerClose && isClose === "false") {
-//           headerClose.style.display = "none";
-//         }
-//       }, 100);
+//       /* Exit the function: */
+//       return;
 //     }
-//   });
+//   }
+// }
 
+// /* ✨ 실행 */
+// window.addEventListener("DOMContentLoaded", () => {
+//   includeHTML();
 // });
 
 $(document).ready(function () {
+  $("[data-include-path]").each((index, e) => {
+    console.log(e.dataset.includePath);
+    $(e).load(e.dataset.includePath, () => {});
+  });
+
   const openModal = (target) => {
     $("#" + target).toggleClass("show");
     $("#modal-bg").toggleClass("show");
   };
-
-  $("[data-include-path]").each((index, e) => {
-    $(e).load(e.dataset.includePath, () => {});
-  });
 
   $("[data-modal-target]").each((index, el) => {
     $(el).on("click", (e) => {

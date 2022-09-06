@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="header" class="none-border">
+      <div data-include-path="../../html/layout/_header-mobile.html"></div>
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : container -->
+    <div id="container">
+
+      <!-- s : contents -->
+      <div id="contents">
+
+        <!-- s : 장바구니 -->
+        <div class="contents-cart">
+
+
+          <!-- s : 장바구니 목록 -->
+          <div class="cart-group">
+
+            <div class="cart-selected-all">
+              <div class="checkbox">
+                <input type="checkbox" class="input-checkbox style2" id="checked-all">
+                <label for="checked-all">전체선택(2/3개)</label>
+              </div>
+              <button type="button">선택 삭제</button>
+            </div>
+
+            <div class="cart-list">
+              <div class="item">
+                <div class="checkbox">
+                  <input type="checkbox" class="input-checkbox style2" id="checked-item1">
+                  <label for="checked-item1"></label>
+                </div>
+
+                <span class="thumb bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+                <div class="info">
+                  <span class="name">인천 송도 스테이크 맛집 투어</span>
+                  <span class="price">20,000원</span>
+                </div>
+
+                <button type="button" class="btn-remove icon-close"></button>
+
+              </div>
+
+              <div class="item">
+                <div class="checkbox">
+                  <input type="checkbox" class="input-checkbox style2" id="checked-item2">
+                  <label for="checked-item2"></label>
+                </div>
+
+                <span class="thumb bg-cover"
+                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+
+                <div class="info">
+                  <span class="name">인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어</span>
+                  <span class="price">20,000원</span>
+                </div>
+
+                <button type="button" class="btn-remove icon-close"></button>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- e : 장바구니 목록 -->
+
+          <!-- s : 결제금액 -->
+          <div class="cart-group">
+
+            <div class="info-row-group">
+              <div class="info-row">
+                <div class="subject">결제 금액</div>
+                <div class="content">29,000원</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- e : 결제금액 -->
+
+          <div class="btn-group multiple footer-fixed">
+            <a href="#" class="btn-raised primary radius5 btn-xl  bold">결제하기</a>
+          </div>
+
+
+
+        </div>
+        <!-- e : 장바구니 -->
+
+      </div>
+      <!-- e : contents -->
+
+    </div>
+    <!-- e : container -->
+
+
+
+    <!-- s : footer -->
+    <div data-include-path="../../html/layout/_footer.html"></div>
+    <!-- e : footer -->
+
+  </div>
+
+</body>
+
+</html>
