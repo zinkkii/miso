@@ -3118,11 +3118,17 @@
   }
   @include responsive-to {
     ul {
+      height: 55px;
       li {
         a {
           font-size: 20px;
-          padding-top: 15px;
-          padding-bottom: 15px;
+          height: 55px;
+          line-height: 55px;
+        }
+        &.current {
+          a {
+            height: 55px;
+          }
         }
       }
     }
