@@ -162,12 +162,16 @@ input[type="radio"],
     height: 32px;
     line-height: 32px;
     margin-right: 5px;
-    font-size: 12px;
+    font-size: 14px;
     transition: 0.28s ease;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    &.size-small {
+      font-size: 12px;
+    }
 
     &.color-sub {
       color: #a7a7a7;
@@ -223,21 +227,6 @@ input[type="radio"],
         top: 7px;
         left: 4px;
         z-index: 0;
-      }
-
-      &.box-type1 {
-        &:before {
-        }
-
-        &:after {
-          width: 15px;
-          height: 15px;
-          border: 0;
-          @include background(
-            $image-path + "input_checkbox_off.png",
-            15px 15px
-          );
-        }
       }
     }
   }
@@ -472,6 +461,12 @@ select {
   }
 }
 
+.form {
+  &.border {
+    border-bottom: 1px solid $color-row-border;
+  }
+}
+
 .form-group {
   display: flex;
   align-items: center;
@@ -479,7 +474,15 @@ select {
   padding: 16px 0;
   border-bottom: 1px solid $color-row-border;
   &.none-border {
-    border: 0;
+    border-bottom: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    &:first-child {
+      padding-top: 16px;
+    }
+    &:last-child {
+      padding-bottom: 16px;
+    }
   }
   &.vertical {
     display: block;
@@ -510,13 +513,16 @@ select {
       font-weight: bold;
     }
     .required {
-      width: 6px;
-      height: 6px;
-      border-radius: 3px;
-      background-color: $color-primary;
+      color: #f41f1f;
       display: block;
-      margin-left: 9px;
-      margin-top: -2px;
+      margin-right: 2px;
+      &:before {
+        content: "*";
+        display: block;
+      }
+    }
+    &.size-small {
+      font-size: 12px;
     }
   }
   .form-content {
@@ -566,6 +572,9 @@ select {
       position: absolute;
       left: 0;
       top: 2px;
+    }
+    &.warning {
+      color: #f85858;
     }
   }
 

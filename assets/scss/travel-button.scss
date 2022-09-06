@@ -2952,6 +2952,16 @@
 .cart-group {
   border-top: 1px solid #333;
   margin-bottom: 23px;
+  .title-bar {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 12px 0;
+
+    h3 {
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+    }
+  }
 }
 .cart-selected-all {
   display: flex;
@@ -3072,6 +3082,107 @@
     .primary {
       color: $color-primary;
     }
+  }
+}
+
+// 결제하기
+.contents-order {
+  .btn-more {
+    font-size: 11px;
+    border: 1px solid #707070;
+    padding: 8px 30px;
+  }
+  .cart-group {
+    margin-bottom: 33px;
+    &.payment-price {
+      .options {
+        flex: 1;
+        li {
+          padding: 8.5px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 15px;
+          .label {
+            font-weight: bold;
+          }
+          .content {
+            color: #868686;
+          }
+        }
+      }
+      .total-price {
+        .content {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+// 예약정보 확인
+.order-prodict-list {
+  .item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+
+    .info-wrapper {
+      display: flex;
+    }
+    .thumb {
+      width: 102px;
+      height: 102px;
+      display: block;
+      border-radius: 7px;
+    }
+    .info {
+      flex: 1;
+      margin-left: 15px;
+      padding-top: 3px;
+      .name {
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .options {
+        font-size: 12px;
+        margin-top: 5px;
+        li {
+          padding: 4px 0;
+        }
+        .label {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+        .price {
+          color: #868686;
+        }
+      }
+    }
+
+    .price-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 13px;
+      .created-at {
+        font-size: 12px;
+      }
+      .price {
+        color: $color-primary;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// 특별약관
+.contents-special-terms {
+  border-top: 1px solid #333;
+  padding: 20px;
+  line-height: 20px;
+  .strong {
+    font-weight: bold;
   }
 }
 
