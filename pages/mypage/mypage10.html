@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-mobile.html"></div>
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : container -->
+    <div id="container" class="wide mypage-container">
+
+      <div data-include-path="../../html/layout/_mypage-aside.html"></div>
+
+      <!-- s : contents -->
+      <div id="contents">
+
+        <!-- s : 환불계좌 수정 폼 -->
+        <div class="content-group none-marginTop">
+
+          <div class="content-title-group none-padding for-m">
+            <select class="none-border primary">
+              <option value="1">환불계좌</option>
+              <option value="2">비밀번호 변경</option>
+              <option value="3">예약·취소내역</option>
+              <option value="4">클립 거래 내역</option>
+              <option value="5">환불 계좌</option>
+              <option value="6">알림</option>
+              <option value="7">알림</option>
+            </select>
+          </div>
+
+          <div class="content-title-group none-paddingTop for-pc">
+            <h2 class="title">환불계좌 수정</h2>
+          </div>
+
+          <div class="content-body">
+
+            <div class="form">
+              <div class="form-group">
+                <div class="form-subject">
+                  계좌번호
+                </div>
+                <div class="form-content">
+                  <input type="text" class="input-text full">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-subject">
+                  예금주 명
+                </div>
+                <div class="form-content">
+                  <input type="text" class="input-text full">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-subject">
+                  계좌번호
+                </div>
+                <div class="form-content">
+                  <input type="text" class="input-text full">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- e : 환불계좌 수정 폼 -->
+
+
+        <!-- s : sns 연동 -->
+        <div class="content-group">
+          <div class="content-title-group">
+            <h2 class="title">연동된 SNS 계정</h2>
+          </div>
+
+          <div class="content-body">
+
+            <ul class="sns-links">
+              <li>
+                <span class="icon-sns-google"></span>
+                <div>
+                  <span class="eng">Google</span>
+                  <span class="kor">여행버튼</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- e : sns 연동 -->
+
+        <div class="btn-group d-inline-block button-submit">
+          <a href="#" class="btn-raised primary btn-large radius20">변경 내용 저장</a>
+        </div>
+
+      </div>
+      <!-- e : contents -->
+
+    </div>
+    <!-- e : container -->
+
+
+
+    <!-- s : footer -->
+    <div data-include-path="../../html/layout/_footer.html"></div>
+    <!-- e : footer -->
+
+  </div>
+
+</body>
+
+</html>
