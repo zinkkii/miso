@@ -60,6 +60,9 @@
       font-size: 14px;
       display: block;
     }
+    .icon-sns-google {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -3118,17 +3121,11 @@
   }
   @include responsive-to {
     ul {
-      height: 55px;
       li {
         a {
           font-size: 20px;
-          height: 55px;
-          line-height: 55px;
-        }
-        &.current {
-          a {
-            height: 55px;
-          }
+          padding-top: 15px;
+          padding-bottom: 15px;
         }
       }
     }
@@ -3189,6 +3186,40 @@
       display: block;
       content: "";
       @include draw-arrow(#000, 6px, right);
+    }
+  }
+}
+
+//토글 버튼
+.toggle-checkbox {
+  &:checked {
+    & ~ .toggle-switch {
+      background: #686868;
+      .toggle-button {
+        left: calc(100% - 17px);
+        background: #fd9f4b;
+      }
+    }
+  }
+  & + .toggle-switch {
+    width: 40px;
+    height: 20px;
+    display: block;
+    position: relative;
+    border-radius: 2rem;
+    background-color: #ebebeb;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    .toggle-button {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 0.2rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: #aaaaaa;
+      transition: all 0.3s ease-in;
     }
   }
 }

@@ -27,7 +27,7 @@
       <!-- s : contents -->
       <div id="contents">
 
-        <!-- s : 환불계좌 수정 폼 -->
+        <!-- s : 알림 설정 폼 -->
         <div class="content-group none-marginTop">
 
           <div class="content-title-group none-padding for-m">
@@ -36,44 +36,40 @@
               <option value="2">비밀번호 변경</option>
               <option value="3">예약·취소내역</option>
               <option value="4">클립 거래 내역</option>
-              <option selected value="5">환불 계좌</option>
-              <option value="6">알림 설정</option>
+              <option value="5">환불 계좌</option>
+              <option selected value="6">알림 설정</option>
             </select>
           </div>
 
           <div class="content-title-group none-paddingTop for-pc">
-            <h2 class="title">환불 계좌</h2>
+            <h2 class="title">알림 설정</h2>
           </div>
 
           <div class="content-body">
 
             <div class="form">
+
               <div class="form-group">
                 <div class="form-subject">
-                  은행 명
+                  여행버튼 알림
                 </div>
-                <div class="form-content">
-                  <select name="" id="" class="form-select full">
-                    <option value="">은행을 선택해 주세요.</option>
-                  </select>
+                <div class="form-content align-right">
+                  <input type="checkbox" id="toggle1" hidden class="toggle-checkbox">
+                  <label for="toggle1" class="toggle-switch">
+                    <span class="toggle-button"></span>
+                  </label>
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="form-subject">
-                  예금주 명
+                  마케팅 알림
                 </div>
-                <div class="form-content">
-                  <input type="text" class="input-text full">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="form-subject">
-                  계좌번호
-                </div>
-                <div class="form-content">
-                  <input type="text" class="input-text full">
+                <div class="form-content align-right">
+                  <input type="checkbox" id="toggle2" hidden class="toggle-checkbox">
+                  <label for="toggle2" class="toggle-switch">
+                    <span class="toggle-button"></span>
+                  </label>
                 </div>
               </div>
 
@@ -81,7 +77,7 @@
           </div>
 
         </div>
-        <!-- e : 환불계좌 수정 폼 -->
+        <!-- e : 알림 설정 폼 -->
 
 
         <div class="btn-group d-inline-block button-submit">

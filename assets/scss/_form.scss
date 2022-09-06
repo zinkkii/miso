@@ -500,7 +500,7 @@ select {
     align-items: flex-start;
   }
   .form-subject {
-    min-width: 120px;
+    min-width: 140px;
     padding-left: 20px;
     padding-right: 10px;
     display: flex;
@@ -522,8 +522,23 @@ select {
   .form-content {
     flex: 1;
     padding-right: 20px;
+    &.align-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
     & + .ui-message-box {
       margin-top: 12px;
+    }
+    .confirm-input {
+      position: relative;
+      .text {
+        position: absolute;
+        right: 0;
+        color: #f29639;
+        font-size: 9px;
+        margin: 12px;
+      }
     }
   }
 

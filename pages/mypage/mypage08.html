@@ -27,53 +27,57 @@
       <!-- s : contents -->
       <div id="contents">
 
-        <!-- s : 환불계좌 수정 폼 -->
+        <!-- s : 비밀번호 변경 폼 -->
         <div class="content-group none-marginTop">
 
           <div class="content-title-group none-padding for-m">
             <select class="none-border primary">
               <option value="1">개인정보 수정</option>
-              <option value="2">비밀번호 변경</option>
+              <option selected value="2">비밀번호 변경</option>
               <option value="3">예약·취소내역</option>
               <option value="4">클립 거래 내역</option>
-              <option selected value="5">환불 계좌</option>
+              <option value="5">환불 계좌</option>
               <option value="6">알림 설정</option>
             </select>
           </div>
 
           <div class="content-title-group none-paddingTop for-pc">
-            <h2 class="title">환불 계좌</h2>
+            <h2 class="title">비밀번호 변경</h2>
           </div>
 
           <div class="content-body">
-
             <div class="form">
+
               <div class="form-group">
                 <div class="form-subject">
-                  은행 명
+                  현재 비밀번호
                 </div>
                 <div class="form-content">
-                  <select name="" id="" class="form-select full">
-                    <option value="">은행을 선택해 주세요.</option>
-                  </select>
+                  <input type="password" class="input-text full">
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="form-subject">
-                  예금주 명
+                  새 비밀번호
                 </div>
                 <div class="form-content">
-                  <input type="text" class="input-text full">
+                  <div class="confirm-input">
+                    <input type="password" id="password1" class="input-text full">
+                    <span class="text">사용가능</span>
+                  </div>
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="form-subject">
-                  계좌번호
+                  새 비밀번호 확인
                 </div>
                 <div class="form-content">
-                  <input type="text" class="input-text full">
+                  <div class="confirm-input">
+                    <input type="password" id="password2" class="input-text full">
+                    <span class="text">일치</span>
+                  </div>
                 </div>
               </div>
 
@@ -81,7 +85,7 @@
           </div>
 
         </div>
-        <!-- e : 환불계좌 수정 폼 -->
+        <!-- e : 비밀번호 변경 폼 -->
 
 
         <div class="btn-group d-inline-block button-submit">

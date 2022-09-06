@@ -3450,7 +3450,7 @@ select.form-select {
   align-items: flex-start;
 }
 .form-group .form-subject {
-  min-width: 120px;
+  min-width: 140px;
   padding-left: 20px;
   padding-right: 10px;
   display: flex;
@@ -3473,8 +3473,23 @@ select.form-select {
   flex: 1;
   padding-right: 20px;
 }
+.form-group .form-content.align-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .form-group .form-content + .ui-message-box {
   margin-top: 12px;
+}
+.form-group .form-content .confirm-input {
+  position: relative;
+}
+.form-group .form-content .confirm-input .text {
+  position: absolute;
+  right: 0;
+  color: #f29639;
+  font-size: 9px;
+  margin: 12px;
 }
 .form-group .form-row {
   display: flex;
@@ -4276,6 +4291,9 @@ body.popup-active.hide .popup-modal-bg {
 .sns-links li .kor {
   font-size: 14px;
   display: block;
+}
+.sns-links li .icon-sns-google {
+  margin-right: 10px;
 }
 
 .clip-list-group .titlebar,
@@ -7027,16 +7045,10 @@ body.popup-active.hide .popup-modal-bg {
   flex: 0 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .ui-tabs ul {
-    height: 55px;
-  }
   .ui-tabs ul li a {
     font-size: 20px;
-    height: 55px;
-    line-height: 55px;
-  }
-  .ui-tabs ul li.current a {
-    height: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -7099,4 +7111,33 @@ body.popup-active.hide .popup-modal-bg {
   border-left-color: transparent;
   border-bottom-color: transparent;
   transform: rotate(45deg);
+}
+
+.toggle-checkbox:checked ~ .toggle-switch {
+  background: #686868;
+}
+.toggle-checkbox:checked ~ .toggle-switch .toggle-button {
+  left: calc(100% - 17px);
+  background: #fd9f4b;
+}
+.toggle-checkbox + .toggle-switch {
+  width: 40px;
+  height: 20px;
+  display: block;
+  position: relative;
+  border-radius: 2rem;
+  background-color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.toggle-checkbox + .toggle-switch .toggle-button {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #aaaaaa;
+  transition: all 0.3s ease-in;
 }/*# sourceMappingURL=travel-button.css.map */
