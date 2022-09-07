@@ -3186,6 +3186,122 @@
   }
 }
 
+// 로그인
+.contents-login {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h1 {
+    text-indent: -5000px;
+    background-image: url("../../assets/images/login-logo.svg");
+    width: 201px;
+    height: 77px;
+    margin: 0 auto;
+  }
+  .login-form {
+    .row {
+      margin-top: 22px;
+
+      .form-content {
+        position: relative;
+      }
+      .remove {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        display: none;
+      }
+    }
+    h2 {
+      font-weight: normal;
+      color: #aaaaaa;
+      font-size: 16px;
+    }
+    input {
+      border: 0;
+      font-size: 16px;
+      border-bottom: 1px solid #d1d1d1;
+      text-indent: 5px;
+      height: 45px;
+      &:focus {
+        color: $color-primary;
+        & + .remove {
+          display: block;
+        }
+      }
+    }
+    .helper-text {
+      margin-top: 8px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: $color-primary;
+    }
+    .btn-login {
+      background-color: $color-primary;
+      color: #fff;
+      height: 50px;
+      line-height: 50px;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 25px;
+      margin-top: 50px;
+    }
+  }
+  .login-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+    li {
+      position: relative;
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:after {
+        display: block;
+        content: "";
+        height: 11px;
+        width: 1px;
+        background-color: #707070;
+        position: absolute;
+        right: -0.5px;
+        top: 50%;
+        margin-top: -5.5px;
+      }
+      a {
+        color: #cbcbcb;
+        padding-left: 18px;
+        padding-right: 18px;
+        display: block;
+      }
+    }
+  }
+  .sns-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    li {
+      padding-left: 6.5px;
+      padding-right: 6.5px;
+    }
+  }
+  .sns-login-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
 // ui
 .ui-tabs {
   display: flex;

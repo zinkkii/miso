@@ -258,3 +258,36 @@
 .icon-location {
   @include img-background("../../assets/images/icon-location.svg", 48px, 52px);
 }
+
+.icon-sns-login-facebook {
+  text-indent: -5000px;
+  @include img-background2x(
+    "../../assets/images/sns-login-facebook.png",
+    34px,
+    34px
+  );
+}
+.icon-sns-login-google {
+  text-indent: -5000px;
+  @include img-background2x(
+    "../../assets/images/sns-login-google.png",
+    34px,
+    34px
+  );
+}
+.icon-sns-login-naver {
+  text-indent: -5000px;
+  @include img-background2x(
+    "../../assets/images/sns-login-naver.png",
+    34px,
+    34px
+  );
+}
+.icon-sns-login-kakao {
+  text-indent: -5000px;
+  @include img-background2x(
+    "../../assets/images/sns-login-kakao.png",
+    34px,
+    34px
+  );
+}
