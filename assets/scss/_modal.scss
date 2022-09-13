@@ -49,6 +49,42 @@
     }
   }
 
+  &.pc-show-center {
+    @include responsive-to {
+      border-radius: 5px;
+      transform: translate(-50%, 100%);
+      max-width: 320px;
+      bottom: 50%;
+      left: 50%;
+      right: auto;
+      display: none;
+      top: auto;
+      &.show {
+        display: block;
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+
+  .modal-header {
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    .left {
+      .back {
+        width: $header-height;
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .center {
+    }
+    .right {
+    }
+  }
+
   @include responsive-to {
     border-radius: 5px;
     transform: translate(-50%, 100%);
@@ -210,6 +246,21 @@
       padding-top: 30px;
       .btns {
         margin-top: 10px;
+      }
+    }
+  }
+
+  &.modal-login {
+    max-width: 440px;
+    & > .close {
+      display: none;
+    }
+    @include responsive-to {
+      & > .close {
+        display: block;
+      }
+      .modal-header {
+        display: none;
       }
     }
   }
