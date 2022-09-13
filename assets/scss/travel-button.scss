@@ -159,6 +159,35 @@
     }
   }
 
+  // 예약 상세 내역
+  .reservation-history-group {
+    padding-top: 30px;
+    .title {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .reservation-history {
+    border-bottom: 1px solid $color-row-border;
+    & > li {
+      display: flex;
+      padding-bottom: 35px;
+      .label-1 {
+        min-width: 120px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .label-2 {
+        min-width: 120px;
+        font-size: 15px;
+      }
+      .content {
+      }
+    }
+  }
+
   @include responsive-to {
     padding-left: 0;
     padding-right: 0;
@@ -2753,7 +2782,7 @@
   padding: 20px;
   height: calc(100vh - $header-height);
   position: relative;
-  padding-top: 50px;
+  padding-top: 110px;
   .title {
     font-size: 42px;
     margin-top: 20px;

@@ -851,7 +851,7 @@ button:disabled {
 }
 .btn-raised.gray2, #header .gnb-bar .util-menus .gray2.btn-start, .admin-util .gray2.button {
   background-color: #eaeaea;
-  color: #000;
+  color: #646464;
 }
 .btn-raised.purple, #header .gnb-bar .util-menus .purple.btn-start, .admin-util .purple.button {
   background-color: #9c27b0;
@@ -4411,6 +4411,37 @@ body.popup-active.hide .popup-modal-bg {
 .reservation-list > li .btn-group:empty {
   display: none;
 }
+.clip-list .reservation-history-group,
+.reservation-list .reservation-history-group {
+  padding-top: 30px;
+}
+.clip-list .reservation-history-group .title,
+.reservation-list .reservation-history-group .title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clip-list .reservation-history,
+.reservation-list .reservation-history {
+  border-bottom: 1px solid #f0f0f0;
+}
+.clip-list .reservation-history > li,
+.reservation-list .reservation-history > li {
+  display: flex;
+  padding-bottom: 35px;
+}
+.clip-list .reservation-history > li .label-1,
+.reservation-list .reservation-history > li .label-1 {
+  min-width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.clip-list .reservation-history > li .label-2,
+.reservation-list .reservation-history > li .label-2 {
+  min-width: 120px;
+  font-size: 15px;
+}
 @media screen and (min-width: 768px) {
   .clip-list,
 .reservation-list {
@@ -6725,7 +6756,7 @@ body.popup-active.hide .popup-modal-bg {
   padding: 20px;
   height: calc(100vh - 65px);
   position: relative;
-  padding-top: 50px;
+  padding-top: 110px;
 }
 .contest-upload-done .title {
   font-size: 42px;

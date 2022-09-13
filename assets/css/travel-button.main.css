@@ -821,7 +821,7 @@ button:disabled {
 }
 .btn-raised.gray2, #header .gnb-bar .util-menus .gray2.btn-start, .admin-util .gray2.button {
   background-color: #eaeaea;
-  color: #000;
+  color: #646464;
 }
 .btn-raised.purple, #header .gnb-bar .util-menus .purple.btn-start, .admin-util .purple.button {
   background-color: #9c27b0;
