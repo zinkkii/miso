@@ -50,8 +50,11 @@ Thumbs.db
 
 # sass cache
 *.scssc
+*.css
+*.map
 assets/css/
 assets/css/*
 assets/css/travel-button.css.map
 assets/css/travel-button.min.css.map
 assets/css/travel-button.min.css
+assets/css/travel-button.css

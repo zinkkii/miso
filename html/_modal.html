@@ -19,7 +19,316 @@
     }
 
   };
+
+  // 미리보기
+  const readImage = (input, target) => {
+
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      // 이미지가 로드가 된 경우
+      reader.onload = (e) => {
+        const previewImage = document.getElementById(target);
+
+        console.log(previewImage);
+        previewImage.style.backgroundImage = `url(${e.target.result})`;
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  };
 </script>
+
+<!-- s : 비밀번호 찾기 완료 -->
+<div class="modal modal-find-email pc-show-center fullsize" id="modal-find-password-success">
+  <button type="button" class="close for-pc"><span class="icon-close"></span></button>
+  <div class="modal-header none-border">
+    <div class="left">
+      <button type="button" class="back close"><span class="icon-back"></span></button>
+    </div>
+    <div class="center">
+      <h1>비밀번호 전송 완료</h1>
+      <p class="desc">아래 이메일로 임시 비밀번호를 전송했습니다.</p>
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+  <div class="modal-content">
+
+    <div class="contents-find-email">
+
+      <p class="success-email"> gksalswn1998@naver.com</p>
+
+      <div class="btn-group footer-fixed none-box">
+        <a href="#" class="btn-raised primary btn-large radius3">로그인</a>
+        <ul class="links">
+          <li><a href="#">이메일 찾기</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- e : 비밀번호 찾기 완료 -->
+
+<!-- s : 비밀번호 찾기 -->
+<div class="modal modal-find-email pc-show-center fullsize" id="modal-find-password">
+  <button type="button" class="close for-pc"><span class="icon-close"></span></button>
+  <div class="modal-header none-border">
+    <div class="left">
+      <button type="button" class="back close"><span class="icon-back"></span></button>
+    </div>
+    <div class="center">
+      <h1>비밀번호 찾기</h1>
+      <p class="desc">가입한 이메일 주소로 임시 비밀번호를 알려드립니다.</p>
+    </div>
+    <div class="right">
+    </div>
+  </div>
+  <div class="modal-content">
+    <div class="contents-find-email">
+      <div class="form">
+        <div class="form-group vertical none-border">
+          <div class="form-content">
+            <input type="text" class="input-text full high" placeholder="이메일 주소">
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group footer-fixed none-box">
+        <!-- 활성화 되면 disabled 클래스를 primary로 변경 -->
+        <a href="#" class="btn-raised disabled btn-large radius3 btn-xl">임시 비밀번호 전송</a>
+        <ul class="links">
+          <li><a href="#">이메일 찾기</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- e : 비밀번호 찾기 -->
+
+
+<!-- s : 이메일 찾기 완료 -->
+<div class="modal modal-find-email pc-show-center fullsize" id="modal-find-email-success">
+  <button type="button" class="close for-pc"><span class="icon-close"></span></button>
+  <div class="modal-header none-border">
+    <div class="left">
+      <button type="button" class="back close"><span class="icon-back"></span></button>
+    </div>
+    <div class="center">
+      <h1>이메일 찾기 완료</h1>
+      <p class="desc">이메일 주소 찾기를 완료하였습니다.</p>
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+  <div class="modal-content">
+
+    <div class="contents-find-email">
+
+      <p class="success-email">gksalswn1998@naver.com</p>
+
+      <div class="btn-group footer-fixed none-box">
+        <a href="#" class="btn-raised primary btn-large radius3">로그인</a>
+        <ul class="links">
+          <li><a href="#">비밀번호 찾기</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- e : 이메일 찾기 완료 -->
+
+
+<!-- s : 이메일 찾기 -->
+<div class="modal modal-find-email pc-show-center fullsize" id="modal-find-email">
+  <button type="button" class="close for-pc"><span class="icon-close"></span></button>
+  <div class="modal-header none-border">
+    <div class="left">
+      <button type="button" class="back close"><span class="icon-back"></span></button>
+    </div>
+    <div class="center">
+      <h1>이메일 찾기</h1>
+      <p class="desc">등록한 휴대폰으로 아이디 찾기</p>
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+  <div class="modal-content">
+
+    <div class="contents-find-email">
+
+      <div class="form">
+        <div class="form-group vertical none-border">
+          <div class="form-content">
+            <div class="form-row">
+              <input type="text" class="input-text full high" placeholder="이름(실명)">
+            </div>
+            <div class="form-row">
+              <input type="number" class="input-text full high" placeholder="휴대폰번호">
+              <button type="button" class="btn-raised gray radius1" style="width:70px">전송</button>
+            </div>
+            <div class="form-row">
+              <input type="number" class="input-text full high" placeholder="인증번호">
+              <button type="button" class="btn-raised gray radius1" style="width:70px">확인</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group footer-fixed none-box">
+        <a href="#" class="btn-raised primary btn-large radius3 btn-xl">확인</a>
+        <ul class="links">
+          <li><a href="#">비밀번호 찾기</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- e : 이메일 찾기 -->
+
+<!-- s : 예약신청 완료 -->
+<div class="modal modal-payment-success type-confirm show-center" id="modal-payment-success">
+  <div class="modal-content">
+
+    <h3 class="title">
+      예약신청이 완료되었습니다.
+    </h3>
+    <p class="desc">
+      예약신청이 완료되었습니다!<br />예약 내역은 계정설정 - 예약내역에서 확인 할 수 있습니다.
+    </p>
+
+    <div class="btns">
+      <button type="button" class="btn-raised primary radius20" onclick="closeModal();">확인</button>
+    </div>
+  </div>
+</div>
+<!-- e : 예약신청 완료 -->
+
+
+<!-- s : 특별약관 -->
+<div class="modal modal-special-terms pc-show-center fullsize" id="modal-special-terms">
+
+  <div class="modal-header">
+    <div class="left">
+      <button type="button" class="back close"><span class="icon-back"></span></button>
+    </div>
+    <div class="center">
+      <h1>특별약관</h1>
+    </div>
+    <div class="right">
+      <button type="button" class="close"><span class="icon-close"></span></button>
+    </div>
+  </div>
+  <div class="modal-content">
+    <div class="contents-special-terms">
+
+      <div class="content">
+        ＊내륙여행 이용시 취소/환불 규정입니다. 연합상품은 별도규정이 적용됩니다.<br /><br />
+        <span class="strong"> 1. 여행취소 및 연기(변경)는 여행출발일 3일전에 신청하면, 담당자 확인후에 100% 환불가능합니다.</span> <br />
+        - 이틀 전 취소 80% 환불 / 하루전 취소 70% 환불 / 당일취소, 미연락, 당일불참시 환불없음 <br />
+        - 예약하신 상품의 예약취소와 변경은 근무시간에 전화로만 가능합니다. <br />
+        - 근무시간 외에는 예약 취소 및 변경이 접수, 처리 되지 않습니다. (근무시간:평일 오전 9시 ~ 오후 6시00분까지) <br />
+        - 토요일/일요일 및 공휴일 취소, 변경 신청이 접수되지 않으며 취소일수에서 제외됩니다. <br /><br />
+        <span class="strong">2. 최소출발인원 미달시 행사가 취소, 또는 연기될 수 있습니다. (모객미달시 입금액 100%환불)</span> <br /><br />
+        <span class="strong">3. 행사가 취소될 경우, 출발일 기준, 최소 2~3일전에 연락을 드립니다.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- e : 특별약관 -->
+
+<!-- s : 게시물 더보기 -->
+<div class="modal modal-feed-more" id="modal-post-more">
+  <div class="modal-content">
+    <ul class="feed-more-select">
+      <li><a href="">수정</a></li>
+      <li><a href="">삭제</a></li>
+      <li><a href="">공유</a></li>
+      <li><a href="#" onclick="onFeedCopy(event)">링크복사</a></li>
+      <li><a href="" class="close">취소</a></li>
+    </ul>
+  </div>
+</div>
+<!-- s : 게시물 더보기 -->
+
+<!-- s : 리플렛 더보기 -->
+<div class="modal modal-leaflet-more" id="modal-leaflet-more">
+  <div class="modal-header">
+    <div class="center ">
+      <h1 class="title">인천 리플렛 _ 0616</h1>
+    </div>
+    <div class="right">
+      <button type="button" class="close"><span class="icon-close"></span></button>
+    </div>
+  </div>
+  <div class="modal-content">
+    <ul class="leaflet-more-select">
+      <li><a href=""><span class="icon-util-page"></span> 페이지 보기</a></li>
+      <li><a href=""><span class="icon-util-edit"></span> 수정하기</a></li>
+      <li><a href=""><span class="icon-util-copy"></span> 복사하기</a></li>
+      <li><a href=""><span class="icon-util-qrcode"></span> QR코드 생성</a></li>
+      <li><a href=""><span class="icon-util-share"></span> URL 복사</a></li>
+      <li><a href=""><span class="icon-util-delete"></span> 삭제하기</a></li>
+
+    </ul>
+  </div>
+</div>
+<!-- s : 리플렛 더보기 -->
+
+<!-- s : 프로필 편집 -->
+<div class="modal modal-profile-edit show-center" id="modal-profile-edit">
+
+  <div class="modal-header">
+    <div class="left"></div>
+    <div class="center">
+      <h1 class="title">프로필 편집</h1>
+    </div>
+    <div class="right">
+      <button type="button" class="close"><span class="icon-close"></span></button>
+    </div>
+  </div>
+  <div class="modal-content">
+
+    <div class="profile-photo">
+      <span class="title">프로필 사진</span>
+      <div class="photo-upload-form">
+        <input type="file" onchange="readImage(event.target, 'preview-image')">
+        <span id="preview-image" class="bg-cover preview"
+          style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+          <span class="icon-photo-upload"></span>
+        </span>
+      </div>
+    </div>
+
+    <div class="profile-photo bg">
+      <span class="title">프로필 배경</span>
+      <div class="photo-upload-form">
+        <input type="file" onchange="readImage(event.target, 'preview-image-bg')">
+        <span id="preview-image-bg" class="bg-cover preview"
+          style=" background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+          <span class="icon-photo-upload"></span>
+        </span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#" class="btn-raised primary radius3">수정 완료</a>
+    </div>
+
+  </div>
+</div>
+<!-- e : 프로필 편집 -->
+
 
 <!-- s : 로그인 -->
 <div class="modal modal-login pc-show-center fullsize" id="modal-login">
@@ -689,6 +998,69 @@
   }
 </script>
 <!-- e : 피드 더보기 -->
+
+<!-- s : 검색 -->
+<div class="modal modal-search" id="modal-search">
+  <div class="modal-content">
+    <!-- s : 검색 -->
+    <div class="contents-search">
+
+      <div class="search-form">
+        <input type="search" placeholder="여행지, 관광명소 등 검색" class="input-search" />
+        <button class="btn-remove"><span class="icon-close"></span></button>
+      </div>
+      <div class="search-keyword-group">
+        <div class="search-recent-keyword">
+          <h3>최근 검색어</h3>
+          <button type="button" class="btn-remove">전체삭제</button>
+          <ul>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>부산</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>전주</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+            <li><span class="box"><a href="#"><span>제주도</span></a><button class="btn-remove icon-close"></button></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search-best-keyword">
+          <h3>인기 검색어</h3>
+          <ul>
+            <li><a href="#"><span class="no">1</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">2</span><span>부산</span></a></li>
+            <li><a href="#"><span class="no">3</span><span>전주</span></a></li>
+            <li><a href="#"><span class="no">4</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">5</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">6</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">7</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">8</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">9</span><span>제주도</span></a></li>
+            <li><a href="#"><span class="no">10</span><span>제주도</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- e : 검색 -->
+
+  </div>
+</div>
+<!-- e : 검색 -->
 
 <!-- s : 업로드 -->
 <div class="modal modal-upload" id="modal-upload">

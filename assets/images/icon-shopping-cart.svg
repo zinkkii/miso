@@ -1,0 +1,8 @@
+<svg id="shopping_cart_3" data-name="shopping cart 3" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <circle id="타원_253" data-name="타원 253" cx="10.5" cy="10.5" r="10.5" fill="rgba(0,0,0,0.25)"/>
+  <g id="shopping-cart" transform="translate(3.831 5.271)">
+    <path id="패스_9260" data-name="패스 9260" d="M10.627,30.063a.813.813,0,1,1-.813-.813A.813.813,0,0,1,10.627,30.063Z" transform="translate(-5.746 -19.489)" fill="#fff"/>
+    <path id="패스_9261" data-name="패스 9261" d="M26.377,30.063a.813.813,0,1,1-.813-.813A.813.813,0,0,1,26.377,30.063Z" transform="translate(-15.802 -19.489)" fill="#fff"/>
+    <path id="패스_9262" data-name="패스 9262" d="M11.388,4.283H2.367L2.034,2.575a.407.407,0,0,0-.407-.325H0v.813H1.294l1.554,7.809a.407.407,0,0,0,.407.325h7.321v-.813H3.587L3.254,8.757h7.321a.407.407,0,0,0,.407-.317L11.8,4.779a.407.407,0,0,0-.407-.5ZM10.249,7.944H3.1L2.53,5.1h8.35Z" transform="translate(0 -2.25)" fill="#fff"/>
+  </g>
+</svg>

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  <div data-include-path="../../html/_modal.html"></div>
   <div id="wrap" class="has-bottom-nav">
 
     <div id="header" class="none-border">
@@ -19,7 +19,7 @@
     </div>
 
     <!-- s : container -->
-    <div id="container">
+    <div id="container" class="wide2">
 
       <!-- s : contents -->
       <div id="contents">
@@ -27,6 +27,9 @@
         <!-- s : 결제하기 -->
         <div class="contents-order">
 
+          <div class="title-bar for-pc">
+            <h1 class="title">결제하기</h1>
+          </div>
 
           <!-- s : 예약 정보 확인 -->
           <div class="cart-group">
@@ -70,80 +73,84 @@
           </div>
           <!-- e : 주문상품 목록 -->
 
-          <!-- s : 예약자 정보 -->
-          <div class="cart-group">
+          <div class="cart-group-wrapper">
 
-            <div class="title-bar">
-              <h3>예약자 정보</h3>
-            </div>
+            <!-- s : 예약자 정보 -->
+            <div class="cart-group">
 
-            <div class="form border">
-              <div class="form-group none-border">
-                <div class="form-subject size-small"><span class="required"></span>예약자 이름</div>
-                <div class="form-content">
-                  <input type="text" class="input-text full">
-                </div>
+              <div class="title-bar">
+                <h3>예약자 정보</h3>
               </div>
-              <div class="form-group none-border">
-                <div class="form-subject"><span class="required"></span>E-mail</div>
-                <div class="form-content">
-                  <input type="email" class="input-text full">
+
+              <div class="form border">
+                <div class="form-group none-border">
+                  <div class="form-subject size-small"><span class="required"></span>예약자 이름</div>
+                  <div class="form-content">
+                    <input type="text" class="input-text full">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group none-border">
-                <div class="form-subject"><span class="required"></span>핸드폰</div>
-                <div class="form-content">
-                  <input type="number" class="input-text full">
-                  <p class="helper-text warning">예약 관련 연락 시 사용될 번호이니 정확하게 기입하여 주세요.</p>
+                <div class="form-group none-border">
+                  <div class="form-subject"><span class="required"></span>E-mail</div>
+                  <div class="form-content">
+                    <input type="email" class="input-text full">
+                  </div>
+                </div>
+                <div class="form-group none-border">
+                  <div class="form-subject"><span class="required"></span>핸드폰</div>
+                  <div class="form-content">
+                    <input type="number" class="input-text full">
+                    <p class="helper-text warning">예약 관련 연락 시 사용될 번호이니 정확하게 기입하여 주세요.</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- e : 예약자 정보 -->
+
+            <!-- s : 약관 동의 -->
+            <div class="cart-group agree">
+              <div class="title-bar">
+                <h3>약관 동의</h3>
+              </div>
+
+              <div class="info-row-group">
+                <div class="info-row">
+                  <div class="subject">
+                    <input type="checkbox" id="agree1" class="input-checkbox style2">
+                    <label for="agree1">특별 약관</label>
+                  </div>
+                  <div class="content">
+                    <a href="#" class="btn-more" data-modal-target="modal-special-terms">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-row-group">
+                <div class="info-row">
+                  <div class="subject">
+                    <input type="checkbox" id="agree2" class="input-checkbox style2">
+                    <label for="agree2">개인정보수집 및 이용동의(필수)</label>
+                  </div>
+                  <div class="content">
+                    <a href="#" class=" btn-more">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-row-group">
+                <div class="info-row">
+                  <div class="subject">
+                    <input type="checkbox" id="agree3" class="input-checkbox style2">
+                    <label for="agree3">개인정보 제3자 제공</label>
+                  </div>
+                  <div class="content">
+                    <a href="#" class=" btn-more">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- e : 약관 동의 -->
+
           </div>
-          <!-- e : 예약자 정보 -->
-
-          <!-- s : 약관 동의 -->
-          <div class="cart-group">
-            <div class="title-bar">
-              <h3>약관 동의</h3>
-            </div>
-
-            <div class="info-row-group">
-              <div class="info-row">
-                <div class="subject">
-                  <input type="checkbox" id="agree1" class="input-checkbox style2">
-                  <label for="agree1">특별 약관</label>
-                </div>
-                <div class="content">
-                  <a href="#" class="btn-more">자세히 보기</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="info-row-group">
-              <div class="info-row">
-                <div class="subject">
-                  <input type="checkbox" id="agree2" class="input-checkbox style2">
-                  <label for="agree2">개인정보수집 및 이용동의(필수)</label>
-                </div>
-                <div class="content">
-                  <a href="#" class=" btn-more">자세히 보기</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="info-row-group">
-              <div class="info-row">
-                <div class="subject">
-                  <input type="checkbox" id="agree3" class="input-checkbox style2">
-                  <label for="agree3">개인정보 제3자 제공</label>
-                </div>
-                <div class="content">
-                  <a href="#" class=" btn-more">자세히 보기</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- e : 약관 동의 -->
 
           <!-- s : 결제 금액 -->
           <div class="cart-group payment-price">
@@ -182,7 +189,7 @@
           <!-- e : 결제 금액 -->
 
           <!-- s : 결제수단 -->
-          <div class="cart-group">
+          <div class="cart-group payment-method">
 
             <div class="info-row-group">
               <div class="info-row">
@@ -206,11 +213,10 @@
           <!-- e : 결제수단 -->
 
           <div class="btn-group multiple footer-fixed">
-            <a href="#" class="btn-border primary radius5 btn-xl bold">취소</a>
-            <a href="#" class="btn-raised primary radius5 btn-xl  bold">결제하기</a>
+            <a href="#" class="btn-border primary radius5 btn-xl bold cancel">취소</a>
+            <a href="#" class="btn-raised primary radius5 btn-xl  bold submit"
+              data-modal-target="modal-payment-success">결제하기</a>
           </div>
-
-
 
         </div>
         <!-- e : 결제하기 -->

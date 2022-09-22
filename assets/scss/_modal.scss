@@ -70,7 +70,12 @@
     height: $header-height;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #333333;
+    &.none-border {
+      border-bottom: 0;
+    }
     .left {
+      width: 80px;
       .back {
         width: $header-height;
         height: $header-height;
@@ -80,8 +85,45 @@
       }
     }
     .center {
+      flex: 1;
+      position: relative;
+      h1 {
+      }
+      .desc {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        text-align: center;
+        font-size: 12px;
+        color: #333;
+        margin-top: 8px;
+      }
     }
     .right {
+      width: 80px;
+      display: flex;
+      justify-content: flex-end;
+      .close {
+        width: $header-height;
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @include responsive-to {
+      .left {
+        .back {
+          display: none;
+        }
+      }
+      .center {
+        h1 {
+          font-size: 16px;
+        }
+      }
     }
   }
 
@@ -188,6 +230,224 @@
     .btn {
       height: 40px;
       line-height: 40px;
+    }
+  }
+
+  // 이메일 찾기
+  &.modal-find-email {
+    @include responsive-to {
+      max-width: 419px;
+      padding-top: 54px;
+      .modal-header {
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        .right,
+        .left {
+          display: none;
+        }
+        .center {
+          h1 {
+            font-size: 27px;
+            font-weight: normal;
+          }
+          .desc {
+            font-size: 14px;
+            position: static;
+          }
+        }
+      }
+      .modal-content {
+        padding-bottom: 0;
+      }
+
+      .btn-group {
+        position: static;
+        margin-top: 100px;
+      }
+    }
+  }
+
+  // 예약신청 완료
+  &.modal-payment-success {
+    .modal-content {
+      padding: 23px;
+    }
+    .title {
+      color: #333;
+      font-size: 17px;
+    }
+    .desc {
+      color: #afafaf;
+      font-size: 10px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .btns {
+      margin-top: 16px;
+      .btn-raised {
+        max-width: 107px;
+        margin: 0 auto;
+      }
+    }
+    @include responsive-to {
+      max-width: 447px;
+      .modal-content {
+        padding: 30px;
+      }
+      .title {
+        font-size: 22px;
+      }
+      .desc {
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .btns {
+        margin-top: 17px;
+        .btn-raised {
+          max-width: 135px;
+        }
+      }
+    }
+  }
+
+  // 특별약관
+  &.modal-special-terms {
+    max-width: 626px;
+  }
+
+  // 프로필 편집
+  &.modal-profile-edit {
+    max-width: 505px;
+    .modal-header {
+      height: 42px;
+      border-bottom: 1px solid #e8e8e8;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      .title {
+        color: #000;
+        font-size: 15px;
+      }
+
+      .right {
+        .close {
+          margin-right: -10px;
+          width: 42px;
+          height: 42px;
+        }
+      }
+
+      @include responsive-to {
+        height: $header-height;
+        margin-left: 0;
+        margin-right: 0;
+        .title {
+          font-size: 20px;
+        }
+        .right {
+          .close {
+            margin-right: 0;
+            width: $header-height;
+            height: $header-height;
+          }
+        }
+      }
+    }
+    .modal-content {
+      padding-top: 0;
+    }
+
+    .profile-photo {
+      border-bottom: 1px solid #e8e8e8;
+      padding-top: 12px;
+      padding-bottom: 18px;
+      .title {
+        display: block;
+        color: #333;
+        font-weight: bold;
+      }
+      &.bg {
+        border-bottom: none;
+        .photo-upload-form {
+          margin-top: 15px;
+
+          .preview {
+            width: 100%;
+            height: 134px;
+            max-width: 358px;
+            border-radius: 8px;
+          }
+          .icon-photo-upload {
+            right: 8px;
+            bottom: 8px;
+          }
+        }
+      }
+      @include responsive-to {
+        .title {
+          font-size: 16px;
+          padding-left: 20px;
+        }
+        &.bg {
+          .photo-upload-form {
+            margin-top: 20px;
+            .preview {
+              height: 200px;
+            }
+            .icon-photo-upload {
+              right: 20px;
+              bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      .btn-raised {
+        max-width: 343px;
+        margin: 0 auto;
+      }
+      @include responsive-to {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // 리플렛 더보기
+  &.modal-leaflet-more {
+    border-radius: 0;
+    .modal-header {
+      border-bottom: 1px solid #eaeaea;
+      height: 56px;
+      .center {
+        text-align: left !important;
+        padding-left: 18px;
+      }
+    }
+    .modal-content {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .leaflet-more-select {
+      li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        a {
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding-left: 24px;
+
+          span {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
     }
   }
 
@@ -488,6 +748,10 @@
 
   // 업로드
   &.modal-upload {
+    .modal-content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     .upload-select {
       li {
         padding: 11px 0;
@@ -522,6 +786,72 @@
               48px 48px,
               0 50%
             );
+          }
+        }
+      }
+    }
+  }
+
+  // 검색
+  &.modal-search {
+    max-width: 743px;
+    border-radius: 20px;
+    .modal-content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .search-form {
+      margin: 0;
+      border-radius: 20px;
+      .input-search {
+      }
+    }
+    .search-keyword-group {
+      display: flex;
+      margin-top: 49px;
+    }
+    .search-recent-keyword {
+      flex: 1;
+      position: relative;
+      margin-top: 0;
+      padding-left: 10px;
+      .btn-remove {
+        color: #bfbfbf;
+        font-size: 11px;
+        position: absolute;
+        right: 22px;
+        top: 2px;
+      }
+      ul {
+        display: block;
+        border-top: 1px solid #dbdbdb;
+
+        li {
+          margin: 0;
+          .box {
+            background-color: transparent;
+            a {
+              font-size: 16px;
+              padding: 0;
+              height: 50px;
+              line-height: 50px;
+              @include text-cut;
+            }
+          }
+        }
+      }
+    }
+    .search-best-keyword {
+      flex: 1;
+      margin-top: 0;
+      padding-right: 10px;
+      ul {
+        border-top: 1px solid #dbdbdb;
+        li {
+          a {
+            height: 50px;
+            line-height: 50px;
+            @include text-cut;
           }
         }
       }

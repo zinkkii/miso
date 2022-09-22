@@ -62,6 +62,7 @@
     }
     .header-center {
       flex: 1;
+      position: relative;
     }
     .header-right {
       display: flex;
@@ -72,6 +73,16 @@
     .header-title {
       text-align: center;
       font-size: 16px;
+    }
+    .header-desc {
+      position: absolute;
+      left: -30px;
+      right: -30px;
+      top: 100%;
+      text-align: center;
+      color: #333;
+      font-size: 12px;
+      margin-top: 8px;
     }
 
     .button-close,
@@ -187,6 +198,10 @@
       }
     }
   }
+
+  @include responsive-to {
+    min-height: calc(100vh - 72px - 195px);
+  }
 }
 
 #aside {
@@ -296,6 +311,22 @@
 
   @include responsive-to {
     display: block;
+    .footer-logo {
+      margin-bottom: 10px;
+    }
+    .container {
+      padding-right: 200px;
+      position: relative;
+    }
+    .info-message {
+      display: inline-block;
+    }
+    .footer-sns-links {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -12.5px;
+    }
   }
 }
 
@@ -414,6 +445,7 @@
   &.transparent {
     background-color: transparent;
   }
+  .search,
   .hamburger,
   .add,
   .notification,

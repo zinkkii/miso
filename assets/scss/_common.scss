@@ -236,7 +236,12 @@ button {
   border: none;
   display: block;
   height: $btn-size-default;
-  line-height: $btn-size-default;
+
+  // line-height: $btn-size-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   outline: 0;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
@@ -277,40 +282,40 @@ button {
 
   &.btn-xxs {
     height: $btnSizeXxs;
-    line-height: $btnSizeXxs;
+    // line-height: $btnSizeXxs;
     font-size: 10px;
     padding: 0 0.5em;
   }
 
   &.btn-xs {
     height: $btnSizeXs;
-    line-height: $btnSizeXs;
+    // line-height: $btnSizeXs;
     font-size: 0.75em;
     padding: 0 0.5em;
   }
 
   &.btn-small {
     height: $btnSizeSmall;
-    line-height: $btnSizeSmall;
+    // line-height: $btnSizeSmall;
     font-size: 0.85em;
     padding: 0 1em;
   }
 
   &.btn-large {
     height: $btn-size-large;
-    line-height: $btn-size-large;
+    // line-height: $btn-size-large;
     font-size: 1.2em;
   }
 
   &.btn-xl {
     height: $btn-size-xl;
-    line-height: $btn-size-xl;
+    // line-height: $btn-size-xl;
     font-size: 1.1em;
   }
 
   &.btn-inform {
     height: 27px;
-    line-height: 27px;
+    // line-height: 27px;
   }
 
   &.no-boxshadow {
@@ -459,7 +464,7 @@ button {
 
   &.gray2 {
     background-color: #eaeaea;
-    color: #646464;
+    color: #000;
   }
 
   &.purple {
@@ -557,6 +562,10 @@ button {
     border-radius: 15px 15px 0 0;
     box-shadow: 0px 0px 6px #00000029;
     background-color: #fff;
+    &.none-box {
+      box-shadow: none;
+      border-radius: 0;
+    }
   }
 }
 
@@ -613,7 +622,7 @@ button {
 }
 
 .for-m {
-  display: block 1iom;
+  display: block;
 
   @include responsive-to {
     display: none;

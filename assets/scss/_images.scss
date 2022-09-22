@@ -69,6 +69,20 @@
   }
 }
 
+.menu-search {
+  @include img-background("../images/icon-search-wh.svg", 19px, 19px);
+  background-size: 26px auto;
+  background-position: 50% 14%;
+  &.black {
+    @include img-background("../images/menu-cart-bk.svg", 19px, 19px);
+  }
+  @include responsive-to {
+    &.black {
+      @include img-background("../images/menu-cart-bk.svg", 23px, 23px);
+    }
+  }
+}
+
 .icon-add {
   @include img-background2x("../images/icon-add.png", 62px, 62px);
 }
@@ -289,5 +303,62 @@
     "../../assets/images/sns-login-kakao.png",
     34px,
     34px
+  );
+}
+
+.icon-shopping-cart2 {
+  text-indent: -5000px;
+  @include img-background(
+    "../../assets/images/icon-shopping-cart.svg",
+    21px,
+    21px
+  );
+}
+
+.icon-photo-upload {
+  @include img-background(
+    "../../assets/images/icon-photo-upload.svg",
+    22px,
+    22px
+  );
+  @include responsive-to {
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+  }
+}
+
+.icon-util-edit {
+  @include img-background("../../assets/images/icon-util-edit.svg", 15px, 13px);
+}
+
+.icon-util-delete {
+  @include img-background(
+    "../../assets/images/icon-util-delete.svg",
+    13px,
+    14px
+  );
+}
+
+.icon-util-share {
+  @include img-background(
+    "../../assets/images/icon-util-share.svg",
+    14px,
+    14px
+  );
+}
+
+.icon-util-copy {
+  @include img-background("../../assets/images/icon-util-copy.svg", 12px, 13px);
+}
+
+.icon-util-page {
+  @include img-background("../../assets/images/icon-util-page.svg", 10px, 13px);
+}
+.icon-util-qrcode {
+  @include img-background(
+    "../../assets/images/icon-util-qrcode.svg",
+    12px,
+    12px
   );
 }

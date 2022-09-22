@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+  <div data-include-path="../../html/_modal.html"></div>
+
+  <div id="wrap" class="has-bottom-nav">
+
+    <div class="gnb-mobile" data-include-path="../../html/layout/_mobile-gnb.html"></div>
+
+    <div id="header">
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : container -->
+    <div id="container">
+
+      <!-- s : contents -->
+      <div id="contents">
+
+        <div class="contents-profile">
+
+          <!-- s : 상단 사진 -->
+          <div class="visual-photo">
+
+            <div class="mobile-main-header transparent">
+              <a href="#" class="hamburger" data-modal-target="modal-hamburger"><span class="menu-hamburger"></span></a>
+              <div class="right">
+                <a href="#" class="notification"><span class="menu-notification"></span></a>
+                <a href="#" class="cart"><span class="menu-cart"></span></a>
+                <a href="#" class="search"><span class="menu-search"></span></a>
+              </div>
+            </div>
+
+            <span class="img"
+              style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')"></span>
+            <div class="gradient"></div>
+
+            <div class="profile-image"
+              style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+            </div>
+          </div>
+          <!-- e : 상단 사진 -->
+
+          <!-- s : 유저 정보 -->
+          <div class="user-profile">
+            <span class="name">굠댕밍듀</span>
+            <span class="email">test@naver.com</span>
+            <ul class="follow">
+              <li>
+                <span class="count">123</span>
+                <span class="label">팔로워</span>
+              </li>
+              <li>
+                <span class="count">123</span>
+                <span class="label">팔로잉</span>
+              </li>
+            </ul>
+            <div class="btn-group">
+              <a href="#" class="btn-edit" data-modal-target="modal-profile-edit">프로필 편집</a>
+            </div>
+          </div>
+          <!-- e : 유저 정보 -->
+
+          <!-- s : 탭 -->
+          <div class="user-profile-tabs">
+            <ul>
+              <li class="post">
+                <a href="#">게시물</a>
+              </li>
+              <li class="map">
+                <a href="#">지도</a>
+              </li>
+              <li class="leaflet">
+                <a href="#">리플렛</a>
+              </li>
+              <li class="clip active">
+                <a href="#">클립</a>
+              </li>
+            </ul>
+          </div>
+          <!-- e : 탭 -->
+
+          <div class="user-profile-clip-tabs">
+            <ul>
+              <li><a href="#" class="active">16:9</a></li>
+              <li><a href="#">9:16</a></li>
+            </ul>
+          </div>
+
+          <!-- s : 게시물 -->
+          <div class="user-posts type-clip">
+            <ul class="posts">
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                      <span class="time">00:15</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="img-wrapper">
+                    <a href="#">
+                      <span class="bg-cover img"
+                        style="background-image:url('https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg')">
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- e : 게시물 -->
+
+        </div>
+
+      </div>
+      <!-- e : contents -->
+
+    </div>
+    <!-- e : container -->
+
+
+
+    <!-- s : footer -->
+    <div data-include-path="../../html/layout/_footer.html"></div>
+    <!-- e : footer -->
+
+  </div>
+
+</body>
+
+</html>

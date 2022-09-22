@@ -13,12 +13,13 @@
   <div id="wrap">
 
     <div id="header" class="none-border">
-      <div data-include-path="../../html/layout/_header-mobile.html"></div>
+      <div data-include-path="../../html/layout/_header-mobile.html" data-header-title="결제하기" data-is-close="false">
+      </div>
       <div data-include-path="../../html/layout/_header-pc.html"></div>
     </div>
 
     <!-- s : container -->
-    <div id="container">
+    <div id="container" class="wide2">
 
       <!-- s : contents -->
       <div id="contents">
@@ -26,51 +27,63 @@
         <!-- s : 장바구니 -->
         <div class="contents-cart">
 
+          <div class="title-bar for-pc">
+            <h1 class="title">결제하기</h1>
+          </div>
+
+
+
 
           <!-- s : 주문상품 목록 -->
           <div class="cart-group">
 
-            <div class="info-row-group">
+            <div class="info-row-group for-m">
               <div class="info-row">
                 <div class="subject bold">주문상품</div>
                 <div class="content bold">2개</div>
               </div>
             </div>
 
+            <div class="cart-selected-all for-pc">
 
+              <div class="col1">동영상</div>
+              <div class="col2">금액</div>
+
+            </div>
 
             <div class="cart-list">
+
               <div class="item">
-                <span class="thumb bg-cover"
-                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+                <div class="thumb-wrapper">
+                  <span class="thumb bg-cover"
+                    style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
+                </div>
 
                 <div class="info">
                   <span class="name">인천 송도 스테이크 맛집 투어</span>
                   <span class="price">20,000원</span>
                 </div>
-
-
-
               </div>
 
               <div class="item">
-
-                <span class="thumb bg-cover"
-                  style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
-
-                <div class="info">
-                  <span class="name">인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어 인천 송도 스테이크 맛집 투어</span>
-                  <span class="price">20,000원</span>
+                <div class="thumb-wrapper">
+                  <span class="thumb bg-cover"
+                    style="background-image: url(https://news.kbs.co.kr/data/fckeditor/new/image/2021/05/07/314691620354493423.jpg);"></span>
                 </div>
 
+                <div class="info">
+                  <span class="name">인천 송도 스테이크 맛집 투어</span>
+                  <span class="price">20,000원</span>
+                </div>
               </div>
+
             </div>
 
           </div>
           <!-- e : 주문상품 목록 -->
 
           <!-- s : 결제수단 -->
-          <div class="cart-group">
+          <div class="cart-group payment-methos">
 
             <div class="info-row-group">
               <div class="info-row">
@@ -94,7 +107,7 @@
           <!-- e : 결제수단 -->
 
           <!-- s : 결제 금액 -->
-          <div class="cart-group">
+          <div class="cart-group payment-price">
 
             <div class="info-row-group">
               <div class="info-row">
@@ -106,10 +119,8 @@
           <!-- e : 결제 금액 -->
 
           <div class="btn-group multiple footer-fixed">
-            <a href="#" class="btn-raised primary radius5 btn-xl  bold">결제하기</a>
+            <a href="#" class="btn-raised primary radius5 btn-xl  bold submit">결제하기</a>
           </div>
-
-
 
         </div>
         <!-- e : 장바구니 -->

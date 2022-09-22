@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <div data-include-path="../../html/layout/_head.html"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+
+  <div id="wrap" class="bg-white">
+
+    <div id="header" class="none-border">
+      <div data-include-path="../../html/layout/_header-mobile.html" data-header-title="회원가입" data-is-close="false">
+      </div>
+      <div data-include-path="../../html/layout/_header-pc.html"></div>
+    </div>
+
+    <!-- s : container -->
+    <div id="container" class="wide">
+
+
+      <!-- s : contents -->
+      <div id="contents">
+
+        <!-- s : 회원가입 -->
+        <div class="contents-join">
+
+          <div class="title-bar for-pc">
+            <h1 class="title">회원가입</h1>
+          </div>
+
+          <div class="description-bar">
+            <p class="description">여행버튼에 오신 것을 환영합니다.<br />로그인 하시면 더 많은 서비스를 이용하실 수 있습니다.</p>
+          </div>
+
+          <div class="form">
+
+            <div class="form-group vertical">
+              <div class="form-subject">
+                이메일
+              </div>
+              <div class="form-content">
+                <div class="form-row">
+                  <input type="text" class="input-text full bg-gray2 none-border" placeholder="이메일을 입력해 주세요.">
+                  <button type="button" class="btn-border primary radius3" style="width:130px">중복확인</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group vertical none-border">
+              <div class="form-subject">
+                비밀번호
+              </div>
+              <div class="form-content">
+                <input type="password" class="input-text full bg-gray2 none-border" placeholder="영문,숫자 조합 6~15자리">
+              </div>
+            </div>
+
+            <div class="form-group vertical none-paddingTop">
+              <div class="form-subject">
+                비밀번호 확인
+              </div>
+              <div class="form-content">
+                <input type="password" class="input-text full bg-gray2 none-border" placeholder="영문,숫자 조합 6~15자리">
+              </div>
+            </div>
+
+            <div class="form-group vertical align-top">
+              <div class="form-subject">
+                휴대폰
+              </div>
+              <div class="form-content">
+                <div class="form-row">
+                  <input type="text" class="input-text full bg-gray2 none-border" maxlength="11"
+                    placeholder="‘-‘ 구분없이 입력">
+                  <button type="button" class="btn-border primary radius3" style="width:160px">인증하기 발송</button>
+                </div>
+
+                <div class="form-row">
+                  <input type="text" class="input-text bg-gray2 none-border full" maxlength="6" placeholder="인증번호">
+                  <button type="button" class="btn-border primary radius3" style="width:160px">확인</button>
+                </div>
+                <p class=" helper-text">휴대폰 번호를 변경하려면 SNS인증을 진행하세요.</p>
+              </div>
+            </div>
+
+
+            <div class="form-group vertical">
+              <div class="form-subject">
+                닉네임(상호명)
+              </div>
+              <div class="form-content">
+                <input type="text" class="input-text full bg-gray2 none-border" placeholder="*단체의 경우 법인명(상호명)을 작성">
+              </div>
+            </div>
+
+
+            <div class="form-agree-group">
+              <div class="title-bar">
+                <input type="checkbox" id="allcheck" class="input-checkbox style3">
+                <label for="allcheck">전체동의</label>
+              </div>
+              <ul class="content">
+                <li>
+                  <input type="checkbox" id="agree1" class="input-checkbox style3">
+                  <label for="agree1">본인은 만 14세 이상이며, <a href="#">여행버튼 이용약관</a>, <a href="#">개인정보 수집 및 이용</a> 내용에 동의합니다.
+                    (필수)</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="agree2" class="input-checkbox style3">
+                  <label for="agree2">이벤트, 여행버튼 마케팅 알림 수신에 동의합니다. (선택)</label>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="btn-group button-submit multiple">
+            <a href="#" class="btn-border primary radius5 btn-large bold cancel">취소</a>
+            <a href="#" class="btn-raised primary radius5 btn-large  bold submit">가입하기</a>
+          </div>
+        </div>
+        <!-- e : 회원가입 -->
+
+
+
+      </div>
+      <!-- e : contents -->
+
+    </div>
+    <!-- e : container -->
+
+
+
+    <!-- s : footer -->
+    <div data-include-path="../../html/layout/_footer.html"></div>
+    <!-- e : footer -->
+
+  </div>
+
+</body>
+
+</html>
